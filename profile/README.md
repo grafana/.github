@@ -6,7 +6,7 @@ At [Grafana Labs](https://grafana.com/), we believe in Open Source and Open Stan
 
 We have many projects, but we want to highlight a few, in a quite specific order:
 
-* [Loki](https://github.com/grafana/loki), a high volume, minimal dependency distributed tracing backend.
+* [Loki](https://github.com/grafana/loki), like Prometheus, but for logs.
 * [Grafana](https://github.com/grafana/grafana), the open and composable observability and data visualization platform.
 * [Tempo](https://github.com/grafana/tempo), a high volume, minimal dependency distributed tracing backend.
 * [Mimir](https://github.com/grafana/mimir), the most scalable [Prometheus](https://prometheus.io/) backend.
