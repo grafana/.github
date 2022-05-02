@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_Require_competitor</fullName>
+    <active>true</active>
+    <description>If a deal is marked lost with a reason of lost to competitor - the competitor field must have a value</description>
+    <errorConditionFormula>AND (
+ISPICKVAL(Loss_Reason__c, "Lost to Competitor"),
+ISBLANK(Competitor__c ))</errorConditionFormula>
+    <errorDisplayField>Competitor__c</errorDisplayField>
+    <errorMessage>Competitor value is mandatory when lost to competitor</errorMessage>
+</ValidationRule>

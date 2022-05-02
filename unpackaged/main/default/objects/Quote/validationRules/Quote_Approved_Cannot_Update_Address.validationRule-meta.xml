@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Approved_Cannot_Update_Address</fullName>
+    <active>true</active>
+    <description>when a quote is marked as approved it can no longer have the bill to and ship to edited</description>
+    <errorConditionFormula>AND(
+OR(ISCHANGED(BillingAddress), ISCHANGED(ShippingAddress)),
+ISPICKVAL(Status, "Approved"),
+$User.ProfileId &lt;&gt; '00e1I000000mkok')</errorConditionFormula>
+    <errorMessage>When a quote is marked as approved, the bill to and ship to cannot be edited any longer unless you are  within Finance.</errorMessage>
+</ValidationRule>

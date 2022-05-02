@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Owned_by_Running_User__c</fullName>
+    <description>This field was built to help enable some dynamic filters for the Running User on the AE Pipe Dashboard.</description>
+    <externalId>false</externalId>
+    <formula>Matched_Account_Owner__c = $User.FirstName + " " +  $User.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field was built to help enable some dynamic filters for the Running User on the AE Pipe Dashboard.</inlineHelpText>
+    <label>Account Owned by Running User</label>
+    <type>Checkbox</type>
+</CustomField>

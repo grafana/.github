@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Slack_Channel_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX(Slack_Channel__c, "^|#[^ ]+$"))</errorConditionFormula>
+    <errorDisplayField>Slack_Channel__c</errorDisplayField>
+    <errorMessage>Must be empty or a valid slack channel name</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Most_Recent_Contact_Request__c</fullName>
+    <description>This field captures the Date/Time of the most recent contact request for an Account - as defined by Campaign Membership to a 'Contact Request' Campaign. This field is populated and maintained by a DLRS.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field captures the Date/Time of the most recent contact request for an Account - as defined by Campaign Membership to a 'Contact Request' Campaign. This field is populated and maintained by a DLRS.</inlineHelpText>
+    <label>Most Recent Contact Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>DateTime</type>
+</CustomField>

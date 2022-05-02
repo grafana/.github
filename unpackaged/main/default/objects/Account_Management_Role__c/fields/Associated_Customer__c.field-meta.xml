@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associated_Customer__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>who is the contact that is associated with this role that you have chosen?</inlineHelpText>
+    <label>Associated Customer</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Account Management Roles</relationshipLabel>
+    <relationshipName>Account_Management_Roles</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Response__c</fullName>
+    <description>Indicates if you need to add a sales campaign to work this contact or to create an opportunity. Add an additional response only if you need to create an additional opportunity.</description>
+    <externalId>false</externalId>
+    <formula>/*VIEW STATIC RESOURCES AND UPDATE LINKS*/ 
+IF (
+OR( /*inactive status values*/
+ISPICKVAL( FCRM__FCR_Status__c , "Non Opt-In (Illegal)"),
+ISPICKVAL( FCRM__FCR_Status__c , "Existing Opportunity"),
+ISPICKVAL( FCRM__FCR_Status__c , "Disqualified"),
+ISPICKVAL( FCRM__FCR_Status__c , "Unable to Connect"),
+ISPICKVAL( FCRM__FCR_Status__c , "On Hold"),
+ISPICKVAL( FCRM__FCR_Status__c , "Customer"),
+ISPICKVAL( FCRM__FCR_Status__c , "Opportunity Lost")),
+IMAGE("/resource/1596596568000/fccrm_Add_Campaign_Image","Add a Response",16,180),
+IF (
+ISPICKVAL( FCRM__FCR_Status__c , "Active Opportunity (System Use)"), /*active opportunity status value */
+IMAGE("/resource/1596596568000/fccrm_Additional_Response_Image","Additional Opportunity Requires Response",16,180),IMAGE("/resource/1596596568000/fccrm_Has_Campaign_Image","Has Response",16,180)))</formula>
+    <inlineHelpText>Indicates if you need to add a sales campaign to work this contact or to create an opportunity. Add an additional response only if you need to create an additional opportunity.</inlineHelpText>
+    <label>Response:</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

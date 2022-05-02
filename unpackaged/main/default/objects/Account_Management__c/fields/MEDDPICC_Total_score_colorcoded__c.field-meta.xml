@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEDDPICC_Total_score_colorcoded__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+CASE(MEDDPICC_Total_Score__c,
+20, "/img/samples/flag_green.gif",
+19, "/img/samples/flag_green.gif",
+18, "/img/samples/flag_green.gif",
+17, "/img/samples/flag_green.gif",
+16, "/img/samples/flag_green.gif",
+15, "/img/samples/flag_yellow.gif",
+14, "/img/samples/flag_yellow.gif",
+13, "/img/samples/flag_yellow.gif",
+12, "/img/samples/flag_yellow.gif",
+11, "/img/samples/flag_yellow.gif",
+10, "/img/samples/flag_red.gif",
+9, "/img/samples/flag_red.gif",
+8, "/img/samples/flag_red.gif",
+7, "/img/samples/flag_red.gif",
+6, "/img/samples/flag_red.gif",
+5, "/img/samples/flag_red.gif",
+4, "/img/samples/flag_red.gif",
+3, "/img/samples/flag_red.gif",
+2, "/img/samples/flag_red.gif",
+1, "/img/samples/flag_red.gif",
+0, "/img/samples/flag_red.gif",
+"/s.gif"),
+"score color")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MEDDPICC Total</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

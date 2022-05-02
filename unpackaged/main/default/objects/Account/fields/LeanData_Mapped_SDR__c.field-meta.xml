@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeanData_Mapped_SDR__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is utilized in the leandata configuration to pull in the user values.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is utilized in the leandata configuration to pull in the user values.</inlineHelpText>
+    <label>LeanData Mapped SDR</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>LeanData_Mapped_Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Uses information from Opportunities, populated by DLRS, to assign Status values to the Account.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+     AND(
+          Count_of_Lost_Opps__c = 0,
+          Count_of_Won_Opps__c = 0
+         ),
+      "Prospect",
+      IF(
+         OR(
+            AND(
+                Service_Start_Date__c &lt;= TODAY(),
+                Service_End_Date__c &gt; TODAY()
+                ),
+            AND(
+                Service_Start_Date__c &gt;= TODAY(),
+                Count_of_Won_Opps__c &gt;= 1
+                )
+             ),
+            "Customer",
+            IF(
+               AND(
+                   Service_Start_Date__c &lt;= TODAY(),
+                   Service_End_Date__c &lt; TODAY()
+                   ),
+               "Churned",
+               IF(
+                  AND(
+                      Count_of_Lost_Opps__c &gt;= 1,
+                      Count_of_Won_Opps__c = 0
+                     ),
+                  "Lost",
+                  "ERROR BAD DATA"
+                 )
+              )
+         )
+       
+      )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Please check that the service start and end dates are populated on the account and that there is at least one won opportunity on the account in order to show this field as "Customer"</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

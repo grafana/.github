@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PBO__c</fullName>
+    <description>Positive business objective</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the positive business impact of the prospect buying Grafana?
+
+Be specific - i.e. "they're missing an SLA with their best customer and owe them 50k of downtime for each minute."</inlineHelpText>
+    <label>PBO</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

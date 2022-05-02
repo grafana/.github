@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Detail_Records__c</fullName>
+    <description>Counts the number of related Campaign Detail records associated with the Campaign. Used in Process Builder for automated processes.</description>
+    <externalId>false</externalId>
+    <label># of Detail Records</label>
+    <summaryForeignKey>Campaign_Details__c.Campaign__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

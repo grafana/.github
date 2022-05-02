@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_User__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( admin_panel_link__c  &lt;&gt; "-", TRUE, FALSE)</formula>
+    <label>Current User</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

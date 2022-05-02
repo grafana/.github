@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>vip</fullName>
+        <default>false</default>
+        <label>VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>fog</fullName>
+        <default>false</default>
+        <label>FoG</label>
+    </customValue>
+    <customValue>
+        <fullName>staff</fullName>
+        <default>false</default>
+        <label>Staff</label>
+    </customValue>
+    <customValue>
+        <fullName>trial</fullName>
+        <default>false</default>
+        <label>Trial</label>
+    </customValue>
+    <masterLabel>Gcom Org Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

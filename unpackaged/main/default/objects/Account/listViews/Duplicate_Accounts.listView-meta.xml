@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duplicate_Accounts</fullName>
+    <columns>UltimateParent__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE</field>
+        <operation>contains</operation>
+        <value>Unknown Value</value>
+    </filters>
+    <label>Duplicate Accounts</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Sales_Operations</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

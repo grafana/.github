@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Sizing_Calculator__c</fullName>
+    <description>Link to Product Sizing Calculator document</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Link to Product Sizing Calculator document</inlineHelpText>
+    <label>Product Sizing Calculator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

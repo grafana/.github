@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Forecast_Category_Number__c</fullName>
+    <description>A numerical value that shows the forecast categories from the "true" forecast category field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A numerical value that shows the forecast categories from the "true" forecast category field</inlineHelpText>
+    <label>Forecast Category Number</label>
+    <precision>1</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

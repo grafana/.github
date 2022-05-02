@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opt_In_Score__c</fullName>
+    <description>This field scores the # of Optins on the account
+&gt; 10=100, 6-10=75, 1-5=50, 0=25</description>
+    <externalId>false</externalId>
+    <formula>IF(Opt_In_Leads_Contacts__c &gt;= 11, 80,
+IF(Opt_In_Leads_Contacts__c &gt;= 6, 60,
+IF(Opt_In_Leads_Contacts__c &gt;= 1, 40,20)))</formula>
+    <label>Opt In Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

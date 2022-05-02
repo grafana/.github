@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DC__c</fullName>
+    <description>Decision Criteria provide a financial justification of why anything, why now, why Grafana?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Business Criteria &amp; Technical Criteria - Clarify priority and importance of the shopping list.</inlineHelpText>
+    <label>DC</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

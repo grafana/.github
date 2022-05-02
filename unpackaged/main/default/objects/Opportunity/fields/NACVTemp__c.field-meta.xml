@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NACVTemp__c</fullName>
+    <description>Temporary field for the cpq cut over for NACV calculations. This is only for Q3 2021.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Temporary field for the cpq cut over for NACV calculations. This is only for Q3 2021.</inlineHelpText>
+    <label>NACV (Temp)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

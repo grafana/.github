@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Territory Manager</fullName>
+        <default>false</default>
+        <label>Territory Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Executive</fullName>
+        <default>false</default>
+        <label>Account Executive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Success Manager</fullName>
+        <default>false</default>
+        <label>Customer Success Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solutions Engineer</fullName>
+        <default>false</default>
+        <label>Solutions Engineer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Territory and Forecast Administrator</fullName>
+        <default>false</default>
+        <label>Territory and Forecast Administrator</label>
+    </standardValue>
+</StandardValueSet>

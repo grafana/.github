@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TermLength__c</fullName>
+    <description>This is the subscription term from the quote</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(SyncedQuote.Months_in_Contract__c),(SBQQ__PrimaryQuote__r.SBQQ__SubscriptionTerm__c),(SyncedQuote.Months_in_Contract__c))</formula>
+    <inlineHelpText>This is the subscription term from the quote</inlineHelpText>
+    <label>Term Length</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weekly_Management_BC_Below_the_line</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Bridge_Deal__c</columns>
+    <columns>Management_Forecast__c</columns>
+    <columns>Sales_Play__c</columns>
+    <columns>Forecast_Category__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>4/30/2021</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>greaterThan</operation>
+        <value>11/1/2020</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>renewal</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Deal Won,Deal Lost</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>Andrew Calvert,Dmytro Ivanyna,Chris Williamson,Phillip Craig,Ulrich,John Khawam,Edward Spencer</value>
+    </filters>
+    <filters>
+        <field>Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>Best Case</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ia_crm__Contract</value>
+    </filters>
+    <label>Weekly Management (Below the Line)</label>
+</ListView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Play__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Play</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OSS to Enterprise Adoption</fullName>
+                <default>false</default>
+                <label>OSS to Enterprise Adoption</label>
+            </value>
+            <value>
+                <fullName>Legacy Observability</fullName>
+                <default>false</default>
+                <label>Legacy Observability</label>
+            </value>
+            <value>
+                <fullName>Datadog Spend Reduction</fullName>
+                <default>false</default>
+                <label>Datadog Spend Reduction</label>
+            </value>
+            <value>
+                <fullName>Prometheus Deployment at Scale</fullName>
+                <default>false</default>
+                <label>Prometheus Deployment at Scale</label>
+            </value>
+            <value>
+                <fullName>Managed Graphite as a Service</fullName>
+                <default>false</default>
+                <label>Managed Graphite as a Service</label>
+            </value>
+            <value>
+                <fullName>Other (details required)</fullName>
+                <default>false</default>
+                <label>Other (details required)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

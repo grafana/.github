@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metrics_Score__c</fullName>
+    <description>This step is all about how we quantifies success for the customer. Is it a reduction in MTTR?  Or a reduction in tickets? Or less downtime?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A score of 0 means we don't have any metrics.  A score of 1 means that we know there is a project around this, but we don't know what the metrics are they are using to define success.  A score of 2 means  we know how the #'s they are using to define success.</inlineHelpText>
+    <label>Metrics Score</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

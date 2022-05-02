@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Account_G_Com_Org_Slug__c</fullName>
+    <description>Displays the G.Com Org Slug from the related Account</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( ContactId )), (Contact.Account.G_Com_Org_Slug__c) , ( Lead.LeanData__Reporting_Matched_Account__r.G_Com_Org_Slug__c ) )</formula>
+    <inlineHelpText>Displays the G.Com Org Slug from the related Account</inlineHelpText>
+    <label>Account G.Com Org Slug</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

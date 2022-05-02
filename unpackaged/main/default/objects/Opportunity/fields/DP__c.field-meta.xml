@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DP__c</fullName>
+    <description>Intersection of buying &amp; selling cycles and the validation that it will satisfy the prioritized criteria.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What are the processes in evaluating and validating a solution; e.g. security review, PoC, etc. and who is involved?</inlineHelpText>
+    <label>DP</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

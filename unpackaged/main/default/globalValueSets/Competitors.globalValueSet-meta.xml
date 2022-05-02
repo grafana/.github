@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Amazon Managed Grafana</fullName>
+        <default>false</default>
+        <label>Amazon Managed Grafana</label>
+    </customValue>
+    <customValue>
+        <fullName>Amazon Managed Prometheus</fullName>
+        <default>false</default>
+        <label>Amazon Managed Prometheus</label>
+    </customValue>
+    <customValue>
+        <fullName>App Dynamics</fullName>
+        <default>false</default>
+        <label>App Dynamics</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronosphere</fullName>
+        <default>false</default>
+        <label>Chronosphere</label>
+    </customValue>
+    <customValue>
+        <fullName>Cribl</fullName>
+        <default>false</default>
+        <label>Cribl</label>
+    </customValue>
+    <customValue>
+        <fullName>Datadog</fullName>
+        <default>false</default>
+        <label>Datadog</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynatrace</fullName>
+        <default>false</default>
+        <label>Dynatrace</label>
+    </customValue>
+    <customValue>
+        <fullName>Elastic</fullName>
+        <default>false</default>
+        <label>Elastic</label>
+    </customValue>
+    <customValue>
+        <fullName>Fluentd</fullName>
+        <default>false</default>
+        <label>Fluentd</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Managed Prometheus</fullName>
+        <default>false</default>
+        <label>Google Managed Prometheus</label>
+    </customValue>
+    <customValue>
+        <fullName>Honeycomb</fullName>
+        <default>false</default>
+        <label>Honeycomb</label>
+    </customValue>
+    <customValue>
+        <fullName>Humio</fullName>
+        <default>false</default>
+        <label>Humio</label>
+    </customValue>
+    <customValue>
+        <fullName>Jaeger</fullName>
+        <default>false</default>
+        <label>Jaeger</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightstep</fullName>
+        <default>false</default>
+        <label>Lightstep</label>
+    </customValue>
+    <customValue>
+        <fullName>Logstash</fullName>
+        <default>false</default>
+        <label>Logstash</label>
+    </customValue>
+    <customValue>
+        <fullName>Logz.io</fullName>
+        <default>false</default>
+        <label>Logz.io</label>
+    </customValue>
+    <customValue>
+        <fullName>New Relic</fullName>
+        <default>false</default>
+        <label>New Relic</label>
+    </customValue>
+    <customValue>
+        <fullName>OSS</fullName>
+        <default>false</default>
+        <label>OSS</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PagerDuty</fullName>
+        <default>false</default>
+        <label>PagerDuty</label>
+    </customValue>
+    <customValue>
+        <fullName>Scalyr</fullName>
+        <default>false</default>
+        <label>Scalyr</label>
+    </customValue>
+    <customValue>
+        <fullName>ServiceNow</fullName>
+        <default>false</default>
+        <label>ServiceNow</label>
+    </customValue>
+    <customValue>
+        <fullName>Signal FX</fullName>
+        <default>false</default>
+        <label>Signal FX</label>
+    </customValue>
+    <customValue>
+        <fullName>Splunk</fullName>
+        <default>false</default>
+        <label>Splunk</label>
+    </customValue>
+    <customValue>
+        <fullName>SumoLogic</fullName>
+        <default>false</default>
+        <label>SumoLogic</label>
+    </customValue>
+    <customValue>
+        <fullName>Victoria Metrics</fullName>
+        <default>false</default>
+        <label>Victoria Metrics</label>
+    </customValue>
+    <customValue>
+        <fullName>Wavefront</fullName>
+        <default>false</default>
+        <label>Wavefront</label>
+    </customValue>
+    <customValue>
+        <fullName>Zabbix</fullName>
+        <default>false</default>
+        <label>Zabbix</label>
+    </customValue>
+    <customValue>
+        <fullName>Zipkin</fullName>
+        <default>false</default>
+        <label>Zipkin</label>
+    </customValue>
+    <description>Current Competitors for the Grafana Salesforce Instance</description>
+    <masterLabel>Competitors</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

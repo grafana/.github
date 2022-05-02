@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Grafana_com_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>G_Com_Org_Slug__c</columns>
+    <columns>Products__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>LEAD.STATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>grafana.com,Grafana Cloud Paid</value>
+    </filters>
+    <filters>
+        <field>Data_Sources__c</field>
+        <operation>excludes</operation>
+        <value>Loki</value>
+    </filters>
+    <filters>
+        <field>Products__c</field>
+        <operation>excludes</operation>
+        <value>Free Hosted Grafana</value>
+    </filters>
+    <label>New Grafana.com Leads</label>
+</ListView>

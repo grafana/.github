@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LevelJumpUser__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This denotes who is set up as a level jump user and who is not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This denotes who is set up as a level jump user and who is not</inlineHelpText>
+    <label>LevelJump User</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

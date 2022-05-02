@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_created_by_running_user__c</fullName>
+    <externalId>false</externalId>
+    <formula>CFCR_OPP_User__c = $User.FirstName + " " + $User.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opp created by running user</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Amount__c</fullName>
+    <description>This is the amount that the SDR suspects the opportunity will be worth</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the potential opportunity value. This should be set prior to converting the lead to an account/contact/opportunity. GUIDELINE: Grafana Cloud Advanced - $25k, Grafana Enterprise - $40k, GEM or GEL - $100k, OEM Deals - $100k</inlineHelpText>
+    <label>Opportunity Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

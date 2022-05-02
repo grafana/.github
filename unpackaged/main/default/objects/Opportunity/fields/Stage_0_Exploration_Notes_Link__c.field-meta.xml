@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_0_Exploration_Notes_Link__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add a share link to your exploration discovery guide</inlineHelpText>
+    <label>Stage 0 - Exploration Notes Link</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

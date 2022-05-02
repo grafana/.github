@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ulrich_Hans_account_Alignment</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Mapped_SDR_Name__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Hans</value>
+    </filters>
+    <label>Ulrich / Hans account Alignment</label>
+</ListView>

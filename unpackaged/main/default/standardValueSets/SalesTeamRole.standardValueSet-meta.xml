@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Manager</fullName>
+        <default>false</default>
+        <label>Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Manager</fullName>
+        <default>false</default>
+        <label>Channel Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsor</fullName>
+        <default>false</default>
+        <label>Executive Sponsor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Qualifier</fullName>
+        <default>false</default>
+        <label>Lead Qualifier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Sales Consultant</fullName>
+        <default>false</default>
+        <label>Pre-Sales Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Manager</fullName>
+        <default>false</default>
+        <label>Sales Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Rep</fullName>
+        <default>false</default>
+        <label>Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Owner</fullName>
+        <default>false</default>
+        <label>Opportunity Owner</label>
+    </standardValue>
+</StandardValueSet>

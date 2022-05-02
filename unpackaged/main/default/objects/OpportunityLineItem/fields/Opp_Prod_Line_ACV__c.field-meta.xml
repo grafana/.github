@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Prod_Line_ACV__c</fullName>
+    <description>Calculates the ACV for the Opportunity Product Line which may have Term less than 12 months</description>
+    <externalId>false</externalId>
+    <formula>IF(Subscription_Type_Text__c  &lt;&gt; "Renewable",0,
+IF(
+  AND(Subscription_Type_Text__c ="Renewable",SBQQ__QuoteLine__r.SBQQ__EffectiveStartDate__c
+ &gt; Opportunity_Start_Date__c + 364),0,
+IF( 
+AND(Subscription_Type_Text__c ="Renewable",Opp_Prod_Line_Term__c &lt;= 12) , TotalPrice,
+
+TotalPrice  /  Opp_Prod_Line_Term__c  *  12
+
+)))</formula>
+    <inlineHelpText>Calculates the ACV for the Opportunity Product Line which may have Term less than 12 months</inlineHelpText>
+    <label>Opp Prod Line ACV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Notes__c</fullName>
+    <description>Booking notes for the Deal Ops team to utilize</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Booking notes for the Deal Ops team to utilize</inlineHelpText>
+    <label>Booking Notes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

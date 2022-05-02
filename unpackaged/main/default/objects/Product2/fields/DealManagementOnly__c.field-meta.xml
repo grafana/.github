@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DealManagementOnly__c</fullName>
+    <description>this checks the box on whether this is something only the deal management team should see.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+     AND( Non_Quotable__c  = TRUE,
+          NOT($Profile.Name = 'System Administrator'),
+          NOT($Profile.Name = 'Deal Ops Administrator'),
+          NOT($Profile.Name = 'Grafana System Admin Lite')
+        ),
+     TRUE,
+     FALSE)</formula>
+    <inlineHelpText>this checks the box on whether this is something only the deal management team should see.</inlineHelpText>
+    <label>Deal Management Only</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Address_Updates_on_Deal_Won</fullName>
+    <active>false</active>
+    <description>Once a deal is marked "deal won" this prevents the account address from being edited by anyone except finance.</description>
+    <errorConditionFormula>AND(ISCHANGED( fidaddress__c ),Won_Deals__c  &gt;= 1, not( $Permission.Ignore_Validation_Rules ))</errorConditionFormula>
+    <errorDisplayField>fidaddress__c</errorDisplayField>
+    <errorMessage>Once a deal is marked "deal won" this prevents the account address from being edited by anyone except finance. Please contact finance to request an update to the billing and/or shipping address.</errorMessage>
+</ValidationRule>

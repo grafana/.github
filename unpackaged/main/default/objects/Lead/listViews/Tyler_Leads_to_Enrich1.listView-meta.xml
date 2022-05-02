@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tyler_Leads_to_Enrich1</fullName>
+    <booleanFilter>(1 OR 2) AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.FIRST_NAME</field>
+        <operation>contains</operation>
+        <value>not provided</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>not provided</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Ivanyna</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2019 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>lessThan</operation>
+        <value>8/1/2020 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notContain</operation>
+        <value>Non Opt-In (Illegal)</value>
+    </filters>
+    <label>Tyler - Leads to Enrich</label>
+</ListView>

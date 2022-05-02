@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Program</fullName>
+        <default>false</default>
+        <label>Account Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Beta Registration</fullName>
+        <default>false</default>
+        <label>Beta Registration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cloud Freemium</fullName>
+        <default>false</default>
+        <label>Cloud Freemium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cloud Trial</fullName>
+        <default>false</default>
+        <label>Cloud Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conference</fullName>
+        <default>false</default>
+        <label>Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Request</fullName>
+        <default>false</default>
+        <label>Contact Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Advocacy</fullName>
+        <default>false</default>
+        <label>Customer Advocacy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Demo Request</fullName>
+        <default>false</default>
+        <label>Demo Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Field Event</fullName>
+        <default>false</default>
+        <label>Field Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meetup</fullName>
+        <default>false</default>
+        <label>Meetup</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Newsletter</fullName>
+        <default>false</default>
+        <label>Newsletter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operational</fullName>
+        <default>false</default>
+        <label>Operational</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Program</fullName>
+        <default>false</default>
+        <label>Partner Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar</fullName>
+        <default>false</default>
+        <label>Seminar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Virtual Conference</fullName>
+        <default>false</default>
+        <label>Virtual Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Virtual Event</fullName>
+        <default>false</default>
+        <label>Virtual Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Workshop</fullName>
+        <default>false</default>
+        <label>Workshop</label>
+    </standardValue>
+</StandardValueSet>

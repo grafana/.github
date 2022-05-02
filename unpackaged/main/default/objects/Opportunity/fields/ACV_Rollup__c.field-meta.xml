@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACV_Rollup__c</fullName>
+    <description>Sum of Renewable Quote lines added to an Opportunity from the Quote object</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Renewable Quote lines added to an Opportunity from the Quote object</inlineHelpText>
+    <label>ACV Rollup</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

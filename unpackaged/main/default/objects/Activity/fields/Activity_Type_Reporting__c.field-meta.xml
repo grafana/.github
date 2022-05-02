@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Type_Reporting__c</fullName>
+    <description>Workaround for custom Activity Report issue: https://help.salesforce.com/s/articleView?id=000321532&amp;type=1</description>
+    <externalId>false</externalId>
+    <label>Activity Type</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

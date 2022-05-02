@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Sales_Stages_My_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Net_NACV_Services__c</columns>
+    <columns>NextSteps__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Opportunity_Owner_Name__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ia_crm__Contract</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>New Sales Stages - My Opportunities</label>
+</ListView>

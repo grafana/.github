@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Visit_Score__c</fullName>
+    <description>This field scores the # of Web Visits on the account
+&gt; 60=60, 11-60=45, 1-10=30, 0=15</description>
+    <externalId>false</externalId>
+    <formula>IF(Web_Visits_Sessions_Last_60_days__c &gt;= 61, 60,
+IF(Web_Visits_Sessions_Last_60_days__c &gt;= 11, 45,
+IF(Web_Visits_Sessions_Last_60_days__c &gt;= 1, 30,
+IF(Web_Visits_Sessions_Last_60_days__c = 0, 15,
+IF(ISBLANK(Web_Visits_Sessions_Last_60_days__c), 0, 15)))))</formula>
+    <label>Web Visit Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

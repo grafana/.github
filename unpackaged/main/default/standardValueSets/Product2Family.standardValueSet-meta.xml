@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cloud</fullName>
+        <default>false</default>
+        <label>Cloud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enterprise</fullName>
+        <default>false</default>
+        <label>Enterprise</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Services</fullName>
+        <default>false</default>
+        <label>Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OnPrem</fullName>
+        <default>false</default>
+        <label>OnPrem</label>
+    </standardValue>
+</StandardValueSet>

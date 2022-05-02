@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SE_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Solutions Engineer</description>
+    <externalId>false</externalId>
+    <label>SE Owner</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1</booleanFilter>
+        <filterItems>
+            <field>User.UserRole.Name</field>
+            <operation>contains</operation>
+            <value>Solutions</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

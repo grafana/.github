@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paper__c</fullName>
+    <description>The sequence of events required to obtain contract signatures post-validation/selection of a solution</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What needs to be signed? Who signs MSA, SO? Are there other documents and what is the process of obtaining signatures?</inlineHelpText>
+    <label>Paper Process</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

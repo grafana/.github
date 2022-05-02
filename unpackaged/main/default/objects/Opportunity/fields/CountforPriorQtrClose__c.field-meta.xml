@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CountforPriorQtrClose__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>checked if we are counting the deal for the prior quarter instead of the actual close quarter</description>
+    <externalId>false</externalId>
+    <inlineHelpText>checked if we are counting the deal for the prior quarter instead of the actual close quarter</inlineHelpText>
+    <label>Count for Prior Qtr Close</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

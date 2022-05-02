@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incentive_Compensation_Notes__c</fullName>
+    <description>This is a field utilized by the finance team for compensation information.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a field utilized by the finance team for compensation information.</inlineHelpText>
+    <label>Incentive Compensation Notes</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

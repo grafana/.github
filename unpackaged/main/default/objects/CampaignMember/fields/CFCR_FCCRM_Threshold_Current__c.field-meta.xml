@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_FCCRM_Threshold_Current__c</fullName>
+    <description>Current FCCRM Threshold score on the related lead/contact record</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( ContactId )), Contact.CFCR_FCCRM_Threshold__c ,Lead.CFCR_FCCRM_Threshold__c )</formula>
+    <inlineHelpText>Current FCCRM Threshold score on the related lead/contact record</inlineHelpText>
+    <label>FCCRM Threshold (Current)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

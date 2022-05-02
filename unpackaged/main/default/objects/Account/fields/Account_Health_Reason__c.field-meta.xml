@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Health_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Health Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Health__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>M&amp;A / Reorg</fullName>
+                <default>false</default>
+                <label>M&amp;A / Reorg</label>
+            </value>
+            <value>
+                <fullName>Loss of champion</fullName>
+                <default>false</default>
+                <label>Loss of champion</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Unresponsive: Customer has not engaged via email or zoom (3x)</fullName>
+                <default>false</default>
+                <label>Unresponsive: Customer has not engaged via email or zoom (3x)</label>
+            </value>
+            <value>
+                <fullName>Product: RA, feature requests, bug, escalations, stability</fullName>
+                <default>false</default>
+                <label>Product: RA, feature requests, bug, escalations, stability</label>
+            </value>
+            <value>
+                <fullName>Lack of Adoption: Customer hasn't adopted Enterprise features and would be fine on OSS</fullName>
+                <default>false</default>
+                <label>Lack of Adoption: Customer hasn't adopted Enterprise features and would be fine on OSS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <controllingFieldValue>Churn</controllingFieldValue>
+            <valueName>M&amp;A / Reorg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <controllingFieldValue>Churn</controllingFieldValue>
+            <valueName>Loss of champion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <controllingFieldValue>Churn</controllingFieldValue>
+            <valueName>Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <controllingFieldValue>Churn</controllingFieldValue>
+            <valueName>Unresponsive: Customer has not engaged via email or zoom (3x)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <controllingFieldValue>Churn</controllingFieldValue>
+            <valueName>Product: RA, feature requests, bug, escalations, stability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Red</controllingFieldValue>
+            <controllingFieldValue>Churn</controllingFieldValue>
+            <valueName>Lack of Adoption: Customer hasn't adopted Enterprise features and would be fine on OSS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

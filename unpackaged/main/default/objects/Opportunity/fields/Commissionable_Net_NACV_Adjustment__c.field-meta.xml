@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commissionable_Net_NACV_Adjustment__c</fullName>
+    <description>This field is utilized by finance to adjust the commissionable net NACV.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is utilized by finance to adjust the commissionable net NACV.</inlineHelpText>
+    <label>Commissionable Net NACV Adjustment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Disposition__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Disposition</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Answered</fullName>
+                <default>false</default>
+                <label>Answered</label>
+            </value>
+            <value>
+                <fullName>Not Answered</fullName>
+                <default>false</default>
+                <label>Not Answered</label>
+            </value>
+            <value>
+                <fullName>Left Voicemail</fullName>
+                <default>false</default>
+                <label>Left Voicemail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

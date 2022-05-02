@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fid15__c</fullName>
+    <externalId>false</externalId>
+    <label>Trial Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Premium Active</fullName>
+                <default>false</default>
+                <label>Premium Active</label>
+            </value>
+            <value>
+                <fullName>Premium Expired</fullName>
+                <default>false</default>
+                <label>Premium Expired</label>
+            </value>
+            <value>
+                <fullName>Grafana Cloud Active</fullName>
+                <default>false</default>
+                <label>Grafana Cloud Active</label>
+            </value>
+            <value>
+                <fullName>Grafana Cloud Expired</fullName>
+                <default>false</default>
+                <label>Grafana Cloud Expired</label>
+            </value>
+            <value>
+                <fullName>worldPing Active</fullName>
+                <default>false</default>
+                <label>worldPing Active</label>
+            </value>
+            <value>
+                <fullName>worldPing Expired</fullName>
+                <default>false</default>
+                <label>worldPing Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

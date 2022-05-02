@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Process_Score__c</fullName>
+    <description>This step requires an understanding of all the stakeholders involved in buying Grafana.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A score of 0 means we don't yet know all of the stakeholders in the decision process.  A score of 1 means we know some of the stakeholders.  A score of 2 means we know all the stakeholders in the decision process and we've met with them.</inlineHelpText>
+    <label>Decision Process Score</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

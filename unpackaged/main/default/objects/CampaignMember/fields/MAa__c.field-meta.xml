@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MAa__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( ContactId )),  Contact.Account_Owner_Role__c  ,  Lead.Matched_Account_Owner_Role__c  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Matched Account Owner Role</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

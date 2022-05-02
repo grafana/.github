@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales Operations</fullName>
+    <description>the support process for the Sales Ops team</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Backlog</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Blocked</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Done</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Follow-Up</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Merged</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>To Do</fullName>
+        <default>true</default>
+    </values>
+</BusinessProcess>

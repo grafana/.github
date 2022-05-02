@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kris_Strategic_Acct_Leads</fullName>
+    <columns>Matched_Account_Name__c</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>Latest_Campaign__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Matched_Account_Owner__c</field>
+        <operation>contains</operation>
+        <value>kristoff</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Opt-In Untouched,Marketing Auto-Engage,Sales Ready,Sales Attempting,Sales In Contact,Existing Opportunity,Disqualified,Unable to Connect,On Hold</value>
+    </filters>
+    <label>Kris Strategic Acct Leads</label>
+</ListView>

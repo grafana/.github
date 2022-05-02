@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Topic__c</fullName>
+    <externalId>false</externalId>
+    <label>Contact Topic</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OSS Grafana</fullName>
+                <default>false</default>
+                <label>OSS Grafana</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise</label>
+            </value>
+            <value>
+                <fullName>Grafana Cloud</fullName>
+                <default>false</default>
+                <label>Grafana Cloud</label>
+            </value>
+            <value>
+                <fullName>Grafana Cloud Trial</fullName>
+                <default>false</default>
+                <label>Grafana Cloud Trial</label>
+            </value>
+            <value>
+                <fullName>Grafana Logs Enterprise</fullName>
+                <default>false</default>
+                <label>Grafana Logs Enterprise</label>
+            </value>
+            <value>
+                <fullName>Grafana Metrics Enterprise</fullName>
+                <default>false</default>
+                <label>Grafana Metrics Enterprise</label>
+            </value>
+            <value>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+                <label>Plugins</label>
+            </value>
+            <value>
+                <fullName>worldPing</fullName>
+                <default>false</default>
+                <label>worldPing</label>
+            </value>
+            <value>
+                <fullName>EU Metrics</fullName>
+                <default>false</default>
+                <label>EU Metrics</label>
+            </value>
+            <value>
+                <fullName>Resellers: Deal Registration</fullName>
+                <default>false</default>
+                <label>Resellers: Deal Registration</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise Metrics</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise Metrics</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise Logs</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise Logs</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise Stack</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise Stack</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise Traces</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise Traces</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Admin_MAE_Date__c</fullName>
+    <description>Displays Reactivation Date if populated else First Reactivation Date else Response Date - Used by FCI funnels to set the MAE Date</description>
+    <externalId>false</externalId>
+    <formula>IF (NOT (ISBLANK ( FCRM__FCR_Reactivation_Date__c   )), FCRM__FCR_Reactivation_Date__c ,
+ IF (NOT (ISBLANK ( CFCR_First_Reactivation_Date__c  )), CFCR_First_Reactivation_Date__c,
+ FCRM__FCR_Response_Date__c ))</formula>
+    <inlineHelpText>Displays Reactivation Date if populated else First Reactivation Date else Response Date - Used by FCI funnels to set the MAE date</inlineHelpText>
+    <label>Admin MAE Date</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

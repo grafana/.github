@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Matched_Account_Id__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   NOT(ISBLANK(ContactId)),
+   CASESAFEID(Contact.Account.Id),
+   CASESAFEID(Lead.LeanData__Reporting_Matched_Account__r.Id)
+  )</formula>
+    <label>Matched Account Id</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

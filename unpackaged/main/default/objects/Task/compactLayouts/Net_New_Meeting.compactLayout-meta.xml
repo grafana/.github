@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_New_Meeting</fullName>
+    <fields>Type</fields>
+    <label>Net New Meeting</label>
+</CompactLayout>

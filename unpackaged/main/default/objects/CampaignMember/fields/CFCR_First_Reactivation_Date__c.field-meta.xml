@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_First_Reactivation_Date__c</fullName>
+    <description>Set by Workflow when clearing the Reactivation Date - Used to set HQL Date based on Admin HQL Date field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set by Workflow when clearing the Reactivation Date - Used to set HQL Date based on Admin HQL Date field</inlineHelpText>
+    <label>First Reactivation Date</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

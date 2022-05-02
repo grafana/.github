@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Is_Revived__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked when an opportunity is opened after previously being closed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checked when an opportunity opened after previously being closed</inlineHelpText>
+    <label>Revived</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>All Things Open</fullName>
+        <default>false</default>
+        <label>All Things Open</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto-Created</fullName>
+        <default>false</default>
+        <label>Auto-Created</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AWS Reinvent 2019</fullName>
+        <default>false</default>
+        <label>AWS Reinvent 2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzureMarketplace-INS|Grafana</fullName>
+        <default>false</default>
+        <label>AzureMarketplace-INS|Grafana</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzurePortal-Create|Grafana</fullName>
+        <default>false</default>
+        <label>AzurePortal-Create|Grafana</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Request</fullName>
+        <default>false</default>
+        <label>Contact Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Event</fullName>
+        <default>false</default>
+        <label>Customer Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DevWeek2020</fullName>
+        <default>false</default>
+        <label>DevWeek2020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Sales Email</fullName>
+        <default>false</default>
+        <label>Direct Sales Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>drift</fullName>
+        <default>false</default>
+        <label>Drift</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Employee Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Facebook</fullName>
+        <default>false</default>
+        <label>Facebook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-grafana-cloud-prometheus-1</fullName>
+        <default>false</default>
+        <label>go-grafana-cloud-prometheus-1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-grafana-cloud-prometheus-2</fullName>
+        <default>false</default>
+        <label>go-grafana-cloud-prometheus-2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google AdWords</fullName>
+        <default>false</default>
+        <label>Google AdWords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>grafana.com</fullName>
+        <default>false</default>
+        <label>grafana.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Grafana Cloud Paid</fullName>
+        <default>false</default>
+        <label>Grafana Cloud Paid</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-grafana-cloud-prometheus-3</fullName>
+        <default>false</default>
+        <label>Grafana Cloud Prometheus</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Grafana Cloud Trial</fullName>
+        <default>false</default>
+        <label>Grafana Cloud Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GrafanaConLA-2019</fullName>
+        <default>false</default>
+        <label>GrafanaConLA-2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GrafanaCon sign-up</fullName>
+        <default>false</default>
+        <label>GrafanaCon sign-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>InfluxWebinar2018</fullName>
+        <default>false</default>
+        <label>InfluxWebinar2018</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Kausal lead</fullName>
+        <default>false</default>
+        <label>Kausal lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Kausal Prometheus Party</fullName>
+        <default>false</default>
+        <label>Kausal Prometheus Party</label>
+    </standardValue>
+    <standardValue>
+        <fullName>KubeCon 2019</fullName>
+        <default>false</default>
+        <label>KubeCon 2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Kubecon Europe 2018</fullName>
+        <default>false</default>
+        <label>Kubecon Europe 2018</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-enterprise-graphite-support</fullName>
+        <default>false</default>
+        <label>Landing: Enterprise Graphite Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-enterprise-prometheus-support</fullName>
+        <default>false</default>
+        <label>Landing: Enterprise Prom Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-hosted-graphite-support</fullName>
+        <default>false</default>
+        <label>Landing: Hosted Graphite Monitoring</label>
+    </standardValue>
+    <standardValue>
+        <fullName>go-hosted-prometheus-monitoring</fullName>
+        <default>false</default>
+        <label>Landing: Hosted Prom Monitoring</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LinkedIn</fullName>
+        <default>false</default>
+        <label>LinkedIn</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Logs Demo</fullName>
+        <default>false</default>
+        <label>Logs Demo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mass Autopilot Sync</fullName>
+        <default>false</default>
+        <label>Mass Autopilot Sync</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound</fullName>
+        <default>false</default>
+        <label>Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Percona 2018</fullName>
+        <default>false</default>
+        <label>Percona 2018</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Researched by DemandZEN</fullName>
+        <default>false</default>
+        <label>Researched by DemandZEN</label>
+    </standardValue>
+    <standardValue>
+        <fullName>roadmap-roadshow</fullName>
+        <default>false</default>
+        <label>Roadmap Roadshow Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Self Serve</fullName>
+        <default>false</default>
+        <label>Self Serve</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>user-group-sf</fullName>
+        <default>false</default>
+        <label>User Group: SF</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>wP &gt;9M</fullName>
+        <default>false</default>
+        <label>wP &gt;9M - Autopilot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>wP Warm - Autopilot</fullName>
+        <default>false</default>
+        <label>wP Warm - Autopilot</label>
+    </standardValue>
+</StandardValueSet>

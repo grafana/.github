@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Firmographic_Score__c</fullName>
+    <description>This is the aggregate of the Employee Count Score, Revenue Score, and HGI Intensity Score. Values should range from 50 - 200.</description>
+    <externalId>false</externalId>
+    <formula>Employee_Count_Score__c  +   HGI_Intensity_Score__c +  Company_Revenue_Score__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the aggregate of the Employee Count Score, Revenue Score, and HGI Intensity Score. Values should range from 50 - 200.</inlineHelpText>
+    <label>Firmographic Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

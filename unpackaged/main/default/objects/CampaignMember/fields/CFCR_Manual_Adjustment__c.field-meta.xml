@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Manual_Adjustment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Administrative field - set to true if you are doing a manual update and want the audit trail</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Administrative field - set to true if you are doing a manual update and want the audit trail</inlineHelpText>
+    <label>Manual Adjustment</label>
+    <type>Checkbox</type>
+</CustomField>

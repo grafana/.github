@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anita_Dzre_Starting_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>Latest_Campaign__c</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Unable to Connect</value>
+    </filters>
+    <filters>
+        <field>LEAD.COUNTRY</field>
+        <operation>equals</operation>
+        <value>United Kingdom</value>
+    </filters>
+    <filters>
+        <field>Mapped_SDR_ID__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>contains</operation>
+        <value>dzre</value>
+    </filters>
+    <label>Anita Dzre Starting Leads</label>
+</ListView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Heat_Rating__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+   (AND(Behavior_Heat_Rating__c &lt; 20, Status__c = "Customer"),20,
+
+IF 
+   (AND (Behavior_Heat_Rating__c &lt; 20, Count_of_Lost_Opps__c + Count_of_Won_Opps__c &lt; Count_of_Opps__c),20,
+
+IF 
+
+(AND(Behavior_Heat_Rating__c &lt; 10, Count_of_Opps__c &gt; 0),10,
+
+IF 
+
+(AND(Behavior_Heat_Rating__c &lt; 10,  Opt_In_Leads_Contacts__c  &gt; 0),10,
+
+
+IF (Behavior_Heat_Rating__c &gt; 30,30,
+
+Behavior_Heat_Rating__c)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Behavior Rating</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

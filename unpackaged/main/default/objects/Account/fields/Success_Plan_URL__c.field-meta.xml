@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Success_Plan_URL__c</fullName>
+    <description>This is the success plan that the CSM creates</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the success plan that the CSM creates</inlineHelpText>
+    <label>Success Plan URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

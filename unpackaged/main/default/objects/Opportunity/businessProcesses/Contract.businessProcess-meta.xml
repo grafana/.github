@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Booking Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Champion Alignment</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contracting</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contracting%2FNegotiation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Deal Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Deal Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Discovery</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Evaluation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualifying Opportunity</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Technical Validation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Verbal Commit%2FTech Win</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title__c</fullName>
+    <description>This is the title of the campaign</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the title of the campaign</inlineHelpText>
+    <label>Title</label>
+    <length>65</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateofLastW__c</fullName>
+    <description>Field capturing the date of the last W sent to a customer for 5 levers reporting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field capturing the date of the last W sent to a customer for 5 levers reporting.</inlineHelpText>
+    <label>Date of Last W</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

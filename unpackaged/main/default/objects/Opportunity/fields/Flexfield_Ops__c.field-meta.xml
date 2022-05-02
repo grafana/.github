@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flexfield_Ops__c</fullName>
+    <description>Field to tag opportunities for Ops purposes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field to tag opportunities for Ops purposes</inlineHelpText>
+    <label>Flexfield (Ops)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

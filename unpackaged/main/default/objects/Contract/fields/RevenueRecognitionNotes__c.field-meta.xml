@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RevenueRecognitionNotes__c</fullName>
+    <description>This is the rev rec notes that finance will enter with their approvals</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the rev rec notes that finance will enter with their approvals</inlineHelpText>
+    <label>Revenue Recognition Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

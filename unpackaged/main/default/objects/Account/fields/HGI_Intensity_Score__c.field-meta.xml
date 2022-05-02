@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HGI_Intensity_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( HGI_Total_Intensity__c  &gt;= 300, 40,
+IF ( HGI_Total_Intensity__c &gt;= 50, 30,
+IF ( HGI_Total_Intensity__c &gt;= 1, 20,10)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>HGI Intensity Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

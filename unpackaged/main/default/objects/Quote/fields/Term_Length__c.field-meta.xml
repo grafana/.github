@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Length__c</fullName>
+    <externalId>false</externalId>
+    <label>Term Length</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+                <label>1 Year</label>
+            </value>
+            <value>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+                <label>2 Years</label>
+            </value>
+            <value>
+                <fullName>3 Years</fullName>
+                <default>false</default>
+                <label>3 Years</label>
+            </value>
+            <value>
+                <fullName>4 Years</fullName>
+                <default>false</default>
+                <label>4 Years</label>
+            </value>
+            <value>
+                <fullName>5 Years</fullName>
+                <default>false</default>
+                <label>5 Years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Stage__c</fullName>
+    <description>This field captures the Opportunity Stage an Activity was captured on. It's populated by Flow. This field should remain Read Only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Opportunity Stage at the time the Activity was captured</inlineHelpText>
+    <label>Opportunity Stage (Stamp)</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Day</fullName>
+                <default>false</default>
+                <label>Account Day</label>
+            </value>
+            <value>
+                <fullName>AMA</fullName>
+                <default>false</default>
+                <label>AMA</label>
+            </value>
+            <value>
+                <fullName>Community Event</fullName>
+                <default>false</default>
+                <label>Community Event</label>
+            </value>
+            <value>
+                <fullName>Customer Advocacy Board</fullName>
+                <default>false</default>
+                <label>Customer Advocacy Board</label>
+            </value>
+            <value>
+                <fullName>Grafana</fullName>
+                <default>false</default>
+                <label>Grafana</label>
+            </value>
+            <value>
+                <fullName>Product Overview / Demo</fullName>
+                <default>false</default>
+                <label>Product Overview / Demo</label>
+            </value>
+            <value>
+                <fullName>Third Party</fullName>
+                <default>false</default>
+                <label>Third Party</label>
+            </value>
+            <value>
+                <fullName>User Story</fullName>
+                <default>false</default>
+                <label>User Story</label>
+            </value>
+            <value>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+                <label>Virtual</label>
+            </value>
+            <value>
+                <fullName>Updates Sign Up</fullName>
+                <default>false</default>
+                <label>Updates Sign Up</label>
+            </value>
+            <value>
+                <fullName>Hybrid</fullName>
+                <default>false</default>
+                <label>Hybrid</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Demo Request</controllingFieldValue>
+            <valueName>Community Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Demo Request</controllingFieldValue>
+            <valueName>Customer Advocacy Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seminar</controllingFieldValue>
+            <controllingFieldValue>Workshop</controllingFieldValue>
+            <valueName>Virtual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seminar</controllingFieldValue>
+            <valueName>Hybrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conference</controllingFieldValue>
+            <controllingFieldValue>Virtual Conference</controllingFieldValue>
+            <controllingFieldValue>Virtual Event</controllingFieldValue>
+            <valueName>Grafana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conference</controllingFieldValue>
+            <controllingFieldValue>Virtual Conference</controllingFieldValue>
+            <controllingFieldValue>Virtual Event</controllingFieldValue>
+            <valueName>Third Party</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <valueName>AMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <valueName>Product Overview / Demo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Webinar</controllingFieldValue>
+            <valueName>User Story</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Event</controllingFieldValue>
+            <valueName>Account Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workshop</controllingFieldValue>
+            <valueName>Updates Sign Up</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

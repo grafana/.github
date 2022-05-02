@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_SCL__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set if this is a Sales in Contact status progression (sync from lead/ contact)</description>
+    <externalId>false</externalId>
+    <label>SCL</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteCheckTemp__c</fullName>
+    <description>Temporary field for the cpq cut over for Check Quote calculations. This is only for Q3 2021.</description>
+    <externalId>false</externalId>
+    <formula>( ACVwithServices__c) -  (NACVTemp__c +  RACVTemp__c +  Services__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Temporary field for the cpq cut over for Check Quote calculations. This is only for Q3 2021.</inlineHelpText>
+    <label>Quote Check (Temp)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

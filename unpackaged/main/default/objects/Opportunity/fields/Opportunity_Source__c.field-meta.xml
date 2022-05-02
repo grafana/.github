@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Creation Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SDR Created</fullName>
+                <default>false</default>
+                <label>SDR Created</label>
+            </value>
+            <value>
+                <fullName>Rep Created</fullName>
+                <default>false</default>
+                <label>Rep Created</label>
+            </value>
+            <value>
+                <fullName>Channel Created</fullName>
+                <default>false</default>
+                <label>Channel Created</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

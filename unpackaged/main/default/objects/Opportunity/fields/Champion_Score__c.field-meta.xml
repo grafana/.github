@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Champion_Score__c</fullName>
+    <description>Who has power and influence to gain through a Grafana Deployment?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>--A score of 0 means we don’t have a champion. 
+--A score of 1 means the rep believes they have a champion, but has not tested that person. 
+--A score of 2 means the rep has a champion, and has tested their willingness to get the deal in front of an economic buyer.</inlineHelpText>
+    <label>Champion Score</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

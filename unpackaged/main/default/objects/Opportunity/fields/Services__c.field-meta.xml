@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services__c</fullName>
+    <description>Sum of Services added to an Opp.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Services added to an Opp from quote object</inlineHelpText>
+    <label>Services</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

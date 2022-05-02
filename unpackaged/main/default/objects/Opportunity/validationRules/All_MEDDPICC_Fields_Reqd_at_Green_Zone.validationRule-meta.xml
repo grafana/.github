@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_MEDDPICC_Fields_Reqd_at_Green_Zone</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+     ISPICKVAL( Forecast_Category__c , "3 - Green Zone"),
+     ISPICKVAL(Type, "New Business"),
+OR (
+     ISBLANK( Competition__c ),
+     ISBLANK( Pain__c ),
+     ISBLANK( Metrics__c ),
+     ISBLANK( Economic_Buyer__c ),
+     ISBLANK( DC__c ),
+     ISBLANK( DP__c ),
+     ISBLANK( Paper__c ),
+     ISBLANK( champion__c ),
+     ISPICKVAL( Champion_Score__c,""),
+     ISPICKVAL( Competition_Score__c,""),
+     ISPICKVAL( Decision_Criteria_Score__c,""),
+     ISPICKVAL( Decision_Process_Score__c,""),
+     ISPICKVAL( Economic_Buyer_Score__c,""),
+     ISPICKVAL( Identified_Pain_Score__c,""),
+     ISPICKVAL( Metrics_Score__c,""),
+     ISPICKVAL( Paper_Process_Score__c,"")
+
+))</errorConditionFormula>
+    <errorMessage>All MEDDPICC fields and scores are required when an opportunity reaches Green Zone or above. Please populate any empty fields in the MEDDPICC section to save.</errorMessage>
+</ValidationRule>

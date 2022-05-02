@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New_Meeting</fullName>
+                <default>true</default>
+                <label>New Meeting</label>
+            </value>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>NBM (New Business Meeting)</fullName>
+                <default>false</default>
+                <label>NBM (New Business Meeting)</label>
+            </value>
+            <value>
+                <fullName>TDD (Tech Deep Dive)</fullName>
+                <default>false</default>
+                <label>TDD (Tech Deep Dive)</label>
+            </value>
+            <value>
+                <fullName>BVA (Business Value Assessment)</fullName>
+                <default>false</default>
+                <label>BVA (Business Value Assessment)</label>
+            </value>
+            <value>
+                <fullName>POV Kickoff</fullName>
+                <default>false</default>
+                <label>POV Kickoff</label>
+            </value>
+            <value>
+                <fullName>POV Midpoint</fullName>
+                <default>false</default>
+                <label>POV Midpoint</label>
+            </value>
+            <value>
+                <fullName>POV Wrap up</fullName>
+                <default>false</default>
+                <label>POV Wrap up</label>
+            </value>
+            <value>
+                <fullName>EB Meeting</fullName>
+                <default>false</default>
+                <label>EB Meeting</label>
+            </value>
+            <value>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>K6 Intro</fullName>
+                <default>false</default>
+                <label>K6 Intro</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Autoengage reply</fullName>
+                <default>false</default>
+                <label>Autoengage reply</label>
+            </value>
+            <value>
+                <fullName>POV (Undefined)</fullName>
+                <default>false</default>
+                <label>POV (Undefined)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

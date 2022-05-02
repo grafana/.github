@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Notes__c</fullName>
+    <description>These are notes that provide more detail about the competitor that we are up against.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>These are notes that provide more detail about the competitor that we are up against.</inlineHelpText>
+    <label>Competitor Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

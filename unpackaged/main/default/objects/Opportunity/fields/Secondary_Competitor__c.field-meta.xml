@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Competitor__c</fullName>
+    <description>This is the secondary competitor for the opportunity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the secondary competitor for the opportunity.</inlineHelpText>
+    <label>Secondary Competitor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Competitors</valueSetName>
+    </valueSet>
+</CustomField>

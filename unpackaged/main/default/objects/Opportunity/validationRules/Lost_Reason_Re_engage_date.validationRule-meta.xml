@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_Re_engage_date</fullName>
+    <active>true</active>
+    <description>If a deal is marked lost timing is not there or unresponsive - the re-engage field must have a value</description>
+    <errorConditionFormula>AND 
+( OR(ISPICKVAL(Loss_Reason__c, "Unresponsive: Went dark"), ISPICKVAL(Loss_Reason__c, "Timing is not there")) ,
+ISBLANK(Suggested_Re_engage_Date__c ))</errorConditionFormula>
+    <errorDisplayField>Suggested_Re_engage_Date__c</errorDisplayField>
+    <errorMessage>Please mark the suggested re-engage date so we can send reminders and automate follow up</errorMessage>
+</ValidationRule>

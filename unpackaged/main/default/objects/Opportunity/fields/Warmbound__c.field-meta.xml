@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warmbound__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR((CreatedDate - Most_Recent_Contact_Request__c) &gt;= 45,ISBLANK (Most_Recent_Contact_Request__c))</formula>
+    <label>Warmbound?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

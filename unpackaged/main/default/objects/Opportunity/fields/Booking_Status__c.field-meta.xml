@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Status__c</fullName>
+    <description>Displays the status(es) of the booking progress</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays the status(es) of the booking progress</inlineHelpText>
+    <label>Booking Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Process</fullName>
+                <default>false</default>
+                <label>In Process</label>
+            </value>
+            <value>
+                <fullName>Awaiting Signature</fullName>
+                <default>false</default>
+                <label>Awaiting Signature</label>
+            </value>
+            <value>
+                <fullName>Awaiting Approval</fullName>
+                <default>false</default>
+                <label>Awaiting Approval</label>
+            </value>
+            <value>
+                <fullName>Awaiting PO</fullName>
+                <default>false</default>
+                <label>Awaiting PO</label>
+            </value>
+            <value>
+                <fullName>Awaiting Clarification</fullName>
+                <default>false</default>
+                <label>Awaiting Clarification</label>
+            </value>
+            <value>
+                <fullName>Awaiting Paperwork Changes</fullName>
+                <default>false</default>
+                <label>Awaiting Paperwork Changes</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer</fullName>
+                <default>false</default>
+                <label>Awaiting Customer</label>
+            </value>
+            <value>
+                <fullName>Awaiting Sales</fullName>
+                <default>false</default>
+                <label>Awaiting Sales</label>
+            </value>
+            <value>
+                <fullName>Awaiting Legal</fullName>
+                <default>false</default>
+                <label>Awaiting Legal</label>
+            </value>
+            <value>
+                <fullName>Awaiting Finance</fullName>
+                <default>false</default>
+                <label>Awaiting Finance</label>
+            </value>
+            <value>
+                <fullName>Awaiting Deal Manager</fullName>
+                <default>false</default>
+                <label>Awaiting Deal Manager</label>
+            </value>
+            <value>
+                <fullName>Completed - Opportunity Closed</fullName>
+                <default>false</default>
+                <label>Completed - Opportunity Closed</label>
+            </value>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Started</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

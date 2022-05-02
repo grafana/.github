@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelfServeConvertedtoCloud__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This denotes when a self serve customer has converted from a self serve to a cloud account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This denotes when a self serve customer has converted from a self serve to a cloud account.</inlineHelpText>
+    <label>Self Serve Converted to Cloud</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

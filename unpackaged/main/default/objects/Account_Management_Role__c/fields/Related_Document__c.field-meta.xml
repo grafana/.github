@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Document__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Which document does this relate to? The Opportunity Qualifier Template or something else?</inlineHelpText>
+    <label>Related Document</label>
+    <referenceTo>Account_Management__c</referenceTo>
+    <relationshipLabel>Account Management Roles</relationshipLabel>
+    <relationshipName>Account_Management_Roles</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trial_Signed_Up_Date__c</fullName>
+    <externalId>false</externalId>
+    <label>Trial Signed Up Date</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

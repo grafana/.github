@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_s_Weekly_Forecast_Review</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Opportunity_Owner_Role__c</columns>
+    <columns>Forecast_Category__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Manager_Notes__c</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_QUARTER</value>
+    </filters>
+    <filters>
+        <field>Forecast_Category__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Omitted</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ia_crm__Contract</value>
+    </filters>
+    <label>Manager's Weekly Forecast Review</label>
+    <sharedTo>
+        <group>Global_Sales_Leadership</group>
+    </sharedTo>
+</ListView>

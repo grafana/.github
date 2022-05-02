@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HQL_datetime__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATETIMEVALUE(FCRM__FCR_QR_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>HQL datetime</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

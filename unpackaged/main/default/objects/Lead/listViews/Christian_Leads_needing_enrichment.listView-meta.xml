@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Christian_Leads_needing_enrichment</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.FIRST_NAME</field>
+        <operation>contains</operation>
+        <value>not provided</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>not provided</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>craig</value>
+    </filters>
+    <label>Christian - Leads needing enrichment</label>
+</ListView>

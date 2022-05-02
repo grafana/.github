@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grafana Cloud</fullName>
+                <default>false</default>
+                <label>Grafana Cloud</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise Metrics</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise Metrics</label>
+            </value>
+            <value>
+                <fullName>Grafana Enterprise Logs</fullName>
+                <default>false</default>
+                <label>Grafana Enterprise Logs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

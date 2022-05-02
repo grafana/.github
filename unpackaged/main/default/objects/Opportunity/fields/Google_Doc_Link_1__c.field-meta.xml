@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Google_Doc_Link_1__c</fullName>
+    <description>The link to the qualifier doc. 11/29/2021 Renamed From Qualifier Doc to "Customer Notes doc"</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please include your qualifier gdoc link here. Template is https://docs.google.com/document/d/1PTFWshGDdXHJ3EOPJEE7eILdYh4KNpg-uT66e3EzKM0/edit?usp=sharing</inlineHelpText>
+    <label>Customer Notes doc</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

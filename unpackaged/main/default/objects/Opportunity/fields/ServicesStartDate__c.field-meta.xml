@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServicesStartDate__c</fullName>
+    <description>Start date on the primary quote</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TEXT(SyncedQuote.Service_Start_Date__c)), TEXT(SBQQ__PrimaryQuote__r.SBQQ__StartDate__c), TEXT(SyncedQuote.Service_Start_Date__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Start date on the primary quote</inlineHelpText>
+    <label>Services Start Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

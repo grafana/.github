@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Contract_End_Date_Required</fullName>
+    <active>true</active>
+    <description>when an opportunity is a renewal, the prior contract end date must be populated</description>
+    <errorConditionFormula>AND(ISPICKVAL(StageName, "Deal Won"), ISPICKVAL(Type, "Renewal"), ISBLANK( Previous_Contract_Expiration_Date__c ))</errorConditionFormula>
+    <errorDisplayField>Previous_Contract_Expiration_Date__c</errorDisplayField>
+    <errorMessage>In order to save this record you must enter the previous contract's expiration date.</errorMessage>
+</ValidationRule>

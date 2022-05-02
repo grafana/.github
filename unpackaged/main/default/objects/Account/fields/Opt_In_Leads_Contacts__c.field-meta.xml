@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opt_In_Leads_Contacts__c</fullName>
+    <description>This is the sum of contacts and matched leads who have an opt in status</description>
+    <externalId>false</externalId>
+    <formula>Matched_Lead_Opt_Ins__c  +  Opt_In_Count__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opt In Leads + Contacts</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commissionable_Net_NACV_Services__c</fullName>
+    <description>This is the Commissionable Net NACV plus the Commissionable Services</description>
+    <externalId>false</externalId>
+    <formula>Commissionable_Net_NACV__c +  Commissionable_Services__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the Commissionable Net NACV plus the Commissionable Services</inlineHelpText>
+    <label>Commissionable Net NACV + Services</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

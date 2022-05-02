@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Activity_Age__c</fullName>
+    <externalId>false</externalId>
+    <formula>(5 * ( FLOOR( ( TODAY() - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD( TODAY() - DATE( 1900, 1, 8), 7 ) ) )
+-
+(5 * ( FLOOR( ( Last_Activity_on_Lead_Contact__c - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD( Last_Activity_on_Lead_Contact__c  - DATE( 1900, 1, 8), 7 ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Activity Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

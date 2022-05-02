@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Product_Features__c</fullName>
+    <description>Features the customer requested during the evaluation phase.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Features the customer requested during the evaluation phase.</inlineHelpText>
+    <label>Requested Product Features</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

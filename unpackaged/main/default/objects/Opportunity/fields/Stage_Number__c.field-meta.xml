@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Number__c</fullName>
+    <description>Checks the value of the "StageName" picklist field on Opportunity Object. If it has a value it returns the stage number associated with that value, otherwise it returns 0.</description>
+    <externalId>false</externalId>
+    <formula>CASE(StageName,
+    'Qualified', 1,
+        'Discovery',2,
+            'Evaluation',3,
+                'Verbal Commit/Tech Win',4,
+                    'Contracting/Negotiation',5,
+                        'Deal Won',6,
+                            'Deal Lost',6,
+    0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Stage Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

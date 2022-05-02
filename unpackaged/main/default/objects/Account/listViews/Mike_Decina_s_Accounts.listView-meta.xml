@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mike_Decina_s_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Matched_Lead_Opt_Ins__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Owner_Name__c</field>
+        <operation>equals</operation>
+        <value>mike decina</value>
+    </filters>
+    <label>Mike Decina's Accounts</label>
+</ListView>

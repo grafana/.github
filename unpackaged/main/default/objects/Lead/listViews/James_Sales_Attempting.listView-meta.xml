@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>James_Sales_Attempting</fullName>
+    <columns>LEAD.COMPANY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LeanData__Reporting_Matched_Account__c</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>Latest_Campaign__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Wengraf</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Sales Attempting,Sales In Contact</value>
+    </filters>
+    <label>James - Sales Attempting</label>
+</ListView>

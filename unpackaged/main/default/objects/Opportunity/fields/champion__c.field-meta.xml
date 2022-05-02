@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>champion__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Does this person have a vested interest in addressing the pain? Access to power? Have you tested your champion and how?</inlineHelpText>
+    <label>Champion</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

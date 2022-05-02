@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Admin_Score_Increment__c</fullName>
+    <description>Updated by a workflow based on changes in other score fields monitored by the Full Circle Score Reanimation Trigger.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Updated by a workflow based on changes in other score fields monitored by the Full Circle Score Reanimation Trigger.</inlineHelpText>
+    <label>Admin Score Increment</label>
+    <precision>1</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

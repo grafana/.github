@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Visits_Users_Last_60_days__c</fullName>
+    <description>This field is manually updated with Google Analytics data to track the number of users on grafana.com in the last 60 days</description>
+    <externalId>false</externalId>
+    <label>Web Visits: Users Last 60 days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

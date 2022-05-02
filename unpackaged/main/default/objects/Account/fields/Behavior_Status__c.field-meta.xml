@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Behavior_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Account_Heat_Rating__c  = 30, '1 Hot',
+IF( Account_Heat_Rating__c = 20, '2 Warm',
+IF( Account_Heat_Rating__c = 10, '3 Viable',
+'4 Dead'
+)))</formula>
+    <label>Behavior Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Forecast_Category__c</fullName>
+    <description>This custom field is built to enhance the Forecast Category options available to Grafana by including additional values not available OOTB. This field is automatically updated via the Opportunity Flow when an Opportunity changes Stage, and is manually editable thereafter.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This custom field is built to enhance the Forecast Category options available to Grafana by including additional values not available OOTB. This field is automatically updated via the Opportunity Flow when an Opportunity changes Stage, and is editable.</inlineHelpText>
+    <label>True Forecast Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline</fullName>
+                <default>true</default>
+                <label>6 - Pipeline</label>
+            </value>
+            <value>
+                <fullName>Upside</fullName>
+                <default>false</default>
+                <label>5 - Upside</label>
+            </value>
+            <value>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+                <label>4 - Best Case</label>
+            </value>
+            <value>
+                <fullName>Green Zone</fullName>
+                <default>false</default>
+                <label>3 - Green Zone</label>
+            </value>
+            <value>
+                <fullName>Commit</fullName>
+                <default>false</default>
+                <label>2 - Commit</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>1 - Closed</label>
+            </value>
+            <value>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+                <label>Omitted</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <controllingFieldValue>Qualifying Opportunity</controllingFieldValue>
+            <valueName>Omitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Booking Review</controllingFieldValue>
+            <controllingFieldValue>Contracting</controllingFieldValue>
+            <valueName>Commit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Opportunity</controllingFieldValue>
+            <controllingFieldValue>Technical Validation</controllingFieldValue>
+            <controllingFieldValue>Champion Alignment</controllingFieldValue>
+            <valueName>Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Opportunity</controllingFieldValue>
+            <controllingFieldValue>Technical Validation</controllingFieldValue>
+            <controllingFieldValue>Champion Alignment</controllingFieldValue>
+            <controllingFieldValue>Evaluation</controllingFieldValue>
+            <valueName>Upside</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contracting</controllingFieldValue>
+            <controllingFieldValue>Evaluation</controllingFieldValue>
+            <valueName>Best Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contracting</controllingFieldValue>
+            <controllingFieldValue>Evaluation</controllingFieldValue>
+            <valueName>Green Zone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Won</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_needing_enrichment</fullName>
+    <booleanFilter>(1 OR 2) AND 3 AND 4 AND 5</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>Campaign__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.FIRST_NAME</field>
+        <operation>contains</operation>
+        <value>not provided</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>not provided</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Wengraf</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Non Opt-In (Illegal)</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>10/1/2021 12:00 AM</value>
+    </filters>
+    <label>Leads needing enrichment</label>
+</ListView>

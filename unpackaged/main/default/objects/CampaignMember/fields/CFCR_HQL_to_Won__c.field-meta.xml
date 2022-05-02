@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_HQL_to_Won__c</fullName>
+    <description>Days between HQL and Won</description>
+    <externalId>false</externalId>
+    <formula>IF( FCRM__FCR_Opportunity_Closed_Won__c = "True", FCRM__FCR_Opportunity_Closed_Date__c - FCRM__FCR_QR_Date__c , null)</formula>
+    <inlineHelpText>Days between HQL and Won</inlineHelpText>
+    <label>HQL to Won</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

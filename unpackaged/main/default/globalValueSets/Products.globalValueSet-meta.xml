@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>GrafanaCloud</fullName>
+        <default>false</default>
+        <label>GrafanaCloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise Subscription</fullName>
+        <default>false</default>
+        <label>Enterprise Subscription</label>
+    </customValue>
+    <customValue>
+        <fullName>Pro Subscription</fullName>
+        <default>false</default>
+        <label>Pro Subscription</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Subscription</fullName>
+        <default>false</default>
+        <label>Commercial Subscription</label>
+    </customValue>
+    <customValue>
+        <fullName>Startup</fullName>
+        <default>false</default>
+        <label>Startup</label>
+    </customValue>
+    <customValue>
+        <fullName>worldPing</fullName>
+        <default>false</default>
+        <label>worldPing</label>
+    </customValue>
+    <customValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </customValue>
+    <customValue>
+        <fullName>metricTank</fullName>
+        <default>false</default>
+        <label>metricTank</label>
+    </customValue>
+    <customValue>
+        <fullName>GrafanaCon Sponsorship</fullName>
+        <default>false</default>
+        <label>GrafanaCon Sponsorship</label>
+    </customValue>
+    <customValue>
+        <fullName>Free Hosted Grafana</fullName>
+        <default>false</default>
+        <label>Free Hosted Grafana</label>
+    </customValue>
+    <customValue>
+        <fullName>Logs</fullName>
+        <default>false</default>
+        <label>Logs</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise Plugin</fullName>
+        <default>false</default>
+        <label>Enterprise Plugin</label>
+    </customValue>
+    <customValue>
+        <fullName>Basic Subscription</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Basic Subscription</label>
+    </customValue>
+    <masterLabel>Products</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

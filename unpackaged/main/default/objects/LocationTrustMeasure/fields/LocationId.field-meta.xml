@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LocationId</fullName>
+    <inlineHelpText>The store, hotel, or other physical space that your business occupies. Each trust measure lives at a single location. If no external reference exists on the location, the trust card won’t display. If you get an error, edit the location to add an external reference.</inlineHelpText>
+    <type>Lookup</type>
+</CustomField>

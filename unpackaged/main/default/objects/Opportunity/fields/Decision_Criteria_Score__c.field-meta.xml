@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Criteria_Score__c</fullName>
+    <description>This step is all about the technical requirements needed to win the deal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>--A score of 0 means we don’t know their criteria that they are measuring us against.  
+--A score of 1 means they have shared requirements with us, but haven’t met them all. 
+--A score of 2 means they have mapped out the requirements, and confirmed with us that we can meet them all.</inlineHelpText>
+    <label>Decision Criteria Score</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

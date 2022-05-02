@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>East_Next_Steps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>Opportunity_Owner_Name__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Management_Forecast__c</columns>
+    <columns>Net_NACV__c</columns>
+    <columns>Net_NACV_Services__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>renewal</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>Andrew Calvert,Raj Dutt,Chris Williamson,Ulrich,Edward Spencer</value>
+    </filters>
+    <filters>
+        <field>Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>Best Case,Green Zone,Commit</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Owner_Territory__c</field>
+        <operation>equals</operation>
+        <value>west,east,federal,apac,emea,central</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Qualified,Discovery,Evaluation,Verbal Commit/Tech Win,Contracting/Negotiation,Deal Won</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>4/30/2022</value>
+    </filters>
+    <label>Global View</label>
+</ListView>

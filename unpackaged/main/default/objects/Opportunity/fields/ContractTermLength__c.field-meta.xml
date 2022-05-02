@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractTermLength__c</fullName>
+    <description>length of the contract</description>
+    <externalId>false</externalId>
+    <inlineHelpText>length of the contract</inlineHelpText>
+    <label>Term Length</label>
+    <summarizedField>OpportunityLineItem.QuoteTerm__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

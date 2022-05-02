@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor__c</fullName>
+    <externalId>false</externalId>
+    <label>Competitors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AppD</fullName>
+                <default>false</default>
+                <label>AppD</label>
+            </value>
+            <value>
+                <fullName>AWS - AMG</fullName>
+                <default>false</default>
+                <label>AWS - AMG</label>
+            </value>
+            <value>
+                <fullName>AWS - AMP</fullName>
+                <default>false</default>
+                <label>AWS - AMP</label>
+            </value>
+            <value>
+                <fullName>Datadog</fullName>
+                <default>false</default>
+                <label>Datadog</label>
+            </value>
+            <value>
+                <fullName>Dynatrace</fullName>
+                <default>false</default>
+                <label>Dynatrace</label>
+            </value>
+            <value>
+                <fullName>Elastic</fullName>
+                <default>false</default>
+                <label>Elastic</label>
+            </value>
+            <value>
+                <fullName>Influx</fullName>
+                <default>false</default>
+                <label>Influx</label>
+            </value>
+            <value>
+                <fullName>New Relic</fullName>
+                <default>false</default>
+                <label>New Relic</label>
+            </value>
+            <value>
+                <fullName>OSS</fullName>
+                <default>false</default>
+                <label>OSS</label>
+            </value>
+            <value>
+                <fullName>Splunk</fullName>
+                <default>false</default>
+                <label>Splunk</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other - details required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

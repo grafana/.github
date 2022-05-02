@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Renewal</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Quote Renewal</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/flow/CPQ_Contract_Renewal_Quoted_Invokable?oppId={!Opportunity.Id}&amp;contractId={!Opportunity.SBQQ__RenewedContractId__c}&amp;oppType={!Opportunity.Type}&amp;daysToClose={!Opportunity.Days_to_Close__c}&amp;retURL={!Opportunity.Id}</url>
+</WebLink>

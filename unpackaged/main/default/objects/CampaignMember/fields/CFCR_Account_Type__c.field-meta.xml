@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Account_Type__c</fullName>
+    <description>Displays the Account Type from the related Account</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( ContactId )), TEXT(Contact.Account.Type) , TEXT( Lead.LeanData__Reporting_Matched_Account__r.Type ) )</formula>
+    <inlineHelpText>Displays the Account Type from the related Account</inlineHelpText>
+    <label>Account Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

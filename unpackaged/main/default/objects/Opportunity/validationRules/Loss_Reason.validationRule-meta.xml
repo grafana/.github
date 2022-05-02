@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason</fullName>
+    <active>true</active>
+    <description>Why did we lose this deal?</description>
+    <errorConditionFormula>AND(
+TEXT(StageName) = 'Deal Lost', 
+(ISBLANK(TEXT( Loss_Reason__c )))
+)</errorConditionFormula>
+    <errorDisplayField>Loss_Reason__c</errorDisplayField>
+    <errorMessage>Select a reason why this deal was lost - fill out the loss notes and any related fields.
+
+Requirements 
+Sub reason if Self Serve or Price&lt;&gt;Pain
+Re-engage date if Unresponsive or Timing not there</errorMessage>
+</ValidationRule>

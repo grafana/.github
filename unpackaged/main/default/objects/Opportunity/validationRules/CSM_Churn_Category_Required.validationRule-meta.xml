@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSM_Churn_Category_Required</fullName>
+    <active>true</active>
+    <description>Prompt to provide Churn Category</description>
+    <errorConditionFormula>AND(
+    NOT( ISNULL(  CSM_Churn_Call__c  ) ),
+    ISPICKVAL(Churn_Category__c,"")
+)</errorConditionFormula>
+    <errorDisplayField>Churn_Category__c</errorDisplayField>
+    <errorMessage>Please Select the Churn Category</errorMessage>
+</ValidationRule>

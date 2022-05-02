@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Lat__c</fullName>
+    <description>Billing Address Latitude</description>
+    <externalId>false</externalId>
+    <formula>BillingLatitude</formula>
+    <inlineHelpText>Billing Address Latitude</inlineHelpText>
+    <label>Billing Lat</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>15</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

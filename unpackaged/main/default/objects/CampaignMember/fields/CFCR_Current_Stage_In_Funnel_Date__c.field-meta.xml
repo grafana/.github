@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Current_Stage_In_Funnel_Date__c</fullName>
+    <description>Displays funnel date for current stage in the funnel. Used for report filters.</description>
+    <externalId>false</externalId>
+    <formula>IF ( 
+OR( 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Non Opt-In (Illegal)" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Existing Opportunity" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Unable to Connect" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "On Hold" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Customer" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Opportunity Lost" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Disqualified" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - No Action Required" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - Existing Opportunity" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - Merged" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - Already Engaged" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - Opportunity Deleted" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - Opportunity Lost" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Resolved - Opportunity Won" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Unmapped" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Legacy" ),
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Default" ), 
+ISPICKVAL(FCRM__FCR_Response_Status__c, "Not a Response")),NULL , 
+IF( FCRM__FCR_SQR__c = TRUE, FCRM__FCR_SQR_Date__c,
+IF( CFCR_SCL__c = TRUE, CFCR_SCL_Date__c,
+IF( FCRM__FCR_SAR__c = TRUE,  FCRM__FCR_SAR_Date__c , 
+IF( FCRM__FCR_QR__c = TRUE,  FCRM__FCR_QR_Date__c , 
+IF( FCRM__FCR_Inquiry_Target__c = TRUE,  FCRM__FCR_Inquiry_Target_Date__c , 
+ NULL ) 
+)))))</formula>
+    <inlineHelpText>Displays funnel date for current stage in the funnel. Used for report filters.</inlineHelpText>
+    <label>Current Stage In Funnel Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

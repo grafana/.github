@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Editable_Next_Steps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Forecast_Category__c</columns>
+    <columns>Management_Forecast__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>PBO__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>7/31/2021</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>greaterThan</operation>
+        <value>11/1/2020</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>renewal</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Deal Won,Deal Lost</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>Alexis Hensel,Lucy Gamble,Vitto Ang,Heather Cave,Zack Buford,Callum Green,Brice Phebus,Chris Heine,Andrew Calvert,Josh Grossman,Dmytro Ivanyna,Chris Williamson,Ulrich,John Khawam,Edward Spencer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ia_crm__Contract</value>
+    </filters>
+    <label>Editable Next Steps</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evaluation_Plan_requires_Evaluation_Type</fullName>
+    <active>true</active>
+    <description>If the Evaluation Start Date or the Evaluation Plan Template is populated, the Evaluation Type must be populated</description>
+    <errorConditionFormula>OR(IF(NOT(ISBLANK( Trial_Doc_URL__c)),(ISPICKVAL(Evaluation_Type__c,"")), null),
+IF(NOT(ISBLANK( Trial_Start_Date__c)),(ISPICKVAL(Evaluation_Type__c,"")), null))</errorConditionFormula>
+    <errorDisplayField>Evaluation_Type__c</errorDisplayField>
+    <errorMessage>If the Evaluation Start Date or the Evaluation Plan Template is populated, the Evaluation Type must be populated</errorMessage>
+</ValidationRule>

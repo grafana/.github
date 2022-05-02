@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trial_Doc_URL__c</fullName>
+    <description>Link to the trial requirements document shared with the prospect/customer. 11/29/20212 Renamed From "Trial Doc URL" to "Evaluation Plan Template"</description>
+    <externalId>false</externalId>
+    <inlineHelpText>https://docs.google.com/document/d/1_5H9OFLecSnGF_lpRfuHEWvl5svzdSC6FWGs_QLK_ac/edit#heading=h.kbu8l58evhdq</inlineHelpText>
+    <label>Evaluation Plan Template</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

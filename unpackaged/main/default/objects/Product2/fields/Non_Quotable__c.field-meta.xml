@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Quotable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is the product that will not be permitted to be quoted until this box is unchecked</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the product that will not be permitted to be quoted until this box is unchecked</inlineHelpText>
+    <label>Non-Quotable</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

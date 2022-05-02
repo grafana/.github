@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Prod_Line_Term__c</fullName>
+    <description>Populates the Opportunity Product Line Term from the Quote Line Effective Subscription Term</description>
+    <externalId>false</externalId>
+    <formula>IF(
+   ISBLANK(SBQQ__QuoteLine__r.SBQQ__EffectiveSubscriptionTerm__c),
+   Opp_Prod_Line_Term_Override__c,
+   SBQQ__QuoteLine__r.SBQQ__EffectiveSubscriptionTerm__c
+  )</formula>
+    <inlineHelpText>Populates the Opportunity Product Line Term from the Quote Line Effective Subscription Term</inlineHelpText>
+    <label>Opp Prod Line Term</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

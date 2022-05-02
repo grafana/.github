@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HGI_Last_Verified_Date__c</fullName>
+    <description>HG Insights last verified date of Grafana or Prometheus Intensity</description>
+    <externalId>false</externalId>
+    <inlineHelpText>HG Insights last verified date of Grafana or Prometheus Intensity</inlineHelpText>
+    <label>HGI Last Verified Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

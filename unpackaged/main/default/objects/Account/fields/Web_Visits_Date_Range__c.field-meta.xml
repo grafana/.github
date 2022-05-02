@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Visits_Date_Range__c</fullName>
+    <description>This field is manually updated with the date range of the Google Analytics data related to the web activity fields on the account</description>
+    <externalId>false</externalId>
+    <label>Web Visits: Date Range</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

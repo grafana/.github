@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finders_Fee_Details_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+Finders_Fee__c = TRUE,
+ISBLANK(TEXT(  Finders_Fee_Details__c  ) 
+))</errorConditionFormula>
+    <errorDisplayField>Finders_Fee_Details__c</errorDisplayField>
+    <errorMessage>Finders Fee Details are required when Finders Fee field is checked.</errorMessage>
+</ValidationRule>

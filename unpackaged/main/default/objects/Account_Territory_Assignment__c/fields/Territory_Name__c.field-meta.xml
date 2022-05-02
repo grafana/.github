@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Name__c</fullName>
+    <description>Name of the currently assigned territory</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of the currently assigned territory</inlineHelpText>
+    <label>Territory Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

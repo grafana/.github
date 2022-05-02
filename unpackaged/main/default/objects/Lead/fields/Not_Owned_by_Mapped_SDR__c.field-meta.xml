@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Owned_by_Mapped_SDR__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(NOT(ISBLANK(Matched_Account_SDR__c)),Mapped_SDR_ID__c &lt;&gt; OwnerId)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Not Owned by Mapped SDR</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

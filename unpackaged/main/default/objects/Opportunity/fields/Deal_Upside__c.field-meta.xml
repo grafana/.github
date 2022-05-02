@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Upside__c</fullName>
+    <description>Use this to input a deal upside to be able to show leadership what the expected the upside of a deal that is currently being worked is.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this to input a deal upside to be able to show leadership what the expected the upside of a deal that is currently being worked is.</inlineHelpText>
+    <label>Deal Upside</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

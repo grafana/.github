@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Non Opt-In (Illegal)</fullName>
+        <default>false</default>
+        <label>Non Opt-In (Illegal)</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Opt-In Untouched</fullName>
+        <default>false</default>
+        <label>Opt-In Untouched</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Auto-Engage</fullName>
+        <default>false</default>
+        <label>Marketing Auto-Engage</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Ready</fullName>
+        <default>false</default>
+        <label>Sales Ready</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Attempting</fullName>
+        <default>false</default>
+        <label>Sales Attempting</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales In Contact</fullName>
+        <default>false</default>
+        <label>Sales In Contact</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Opportunity</fullName>
+        <default>false</default>
+        <label>Existing Opportunity</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified</fullName>
+        <default>false</default>
+        <label>Disqualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unable to Connect</fullName>
+        <default>false</default>
+        <label>Unable to Connect</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Default</fullName>
+        <default>true</default>
+        <label>Default</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Referred to Self-Serve</fullName>
+        <default>false</default>
+        <label>Referred to Self-Serve</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

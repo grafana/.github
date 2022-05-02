@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalContractValueTCV__c</fullName>
+    <description>This generates from a synced or primary quote value Total Price field and does not include the product family services. Generated from the opportunity product.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This generates from a synced or primary quote value Total Price field.</inlineHelpText>
+    <label>Total Contract Value (TCV)</label>
+    <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.ProductFamily__c</field>
+        <operation>notEqual</operation>
+        <value>Services</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

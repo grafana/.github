@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_ACV__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( AnnualContractValueACV__c &lt;&gt; 0, AnnualContractValueACV__c , IF (  Amount  &lt;&gt; 0, Amount, 40000))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Checks for the following values by priority, ACV -&gt; Amount -&gt; 40k</inlineHelpText>
+    <label>Pipeline ACV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

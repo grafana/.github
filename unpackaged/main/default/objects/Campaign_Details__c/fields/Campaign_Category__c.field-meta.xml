@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Campaign Category</label>
+    <referenceTo>Campaign_Category__c</referenceTo>
+    <relationshipLabel>Campaign Details</relationshipLabel>
+    <relationshipName>Campaign_Details</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

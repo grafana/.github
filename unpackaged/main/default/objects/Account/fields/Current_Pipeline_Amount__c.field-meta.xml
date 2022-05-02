@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Pipeline_Amount__c</fullName>
+    <externalId>false</externalId>
+    <label>Current Pipeline Amount</label>
+    <summarizedField>Opportunity.Amount</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Qualified, Discovery, Evaluation, Verbal Commit/Tech Win, Contracting/Negotiation</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

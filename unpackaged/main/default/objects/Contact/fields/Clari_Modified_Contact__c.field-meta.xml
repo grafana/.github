@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clari_Modified_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>a field for the Clari application to complete the autocapture functionality.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>a field for the Clari application to complete the autocapture functionality.</inlineHelpText>
+    <label>Clari Modified Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

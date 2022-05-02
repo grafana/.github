@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Amount__c</fullName>
+    <description>This is the amount value that pulls from when an opportunity is created from a lead and the SDR estimated amount they think the opportunity is worth. Is used in a workflow rule to push into the Opportunity Amount field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the amount value that pulls from when an opportunity is created from a lead and the SDR estimated amount they think the opportunity is worth. Is used in a workflow rule to push into the Opportunity Amount field.</inlineHelpText>
+    <label>Lead Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

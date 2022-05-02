@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field looks up to either the Campaign Member's Contact's Account or the Lead's Account (as matched by LeanData). It is populated by a scheduled Flow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field looks up to either the Campaign Member's Contact's Account or the Lead's Account (as matched by LeanData). It is populated by a scheduled Flow.</inlineHelpText>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Campaign Members</relationshipLabel>
+    <relationshipName>Campaign_Members</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

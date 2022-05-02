@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_from_China</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>LEAD.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.COUNTRY</field>
+        <operation>contains</operation>
+        <value>China,CN</value>
+    </filters>
+    <label>Leads from China</label>
+</ListView>

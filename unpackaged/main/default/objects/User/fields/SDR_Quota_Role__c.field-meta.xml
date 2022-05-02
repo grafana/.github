@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDR_Quota_Role__c</fullName>
+    <externalId>false</externalId>
+    <label>SDR Quota Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Hire</fullName>
+                <default>true</default>
+                <label>New Hire</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Principal - Full</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Principal - Full</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Senior - Full</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Senior - Full</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Standard - Full</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Standard - Full</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Principal - Full</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Principal - Full</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Senior - Full</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Senior - Full</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Standard - Full</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Standard - Full</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Principal - Full</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Principal - Full</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Senior - Full</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Senior - Full</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Standard - Full</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Standard - Full</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Principal - Full</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Principal - Full</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Senior - Full</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Senior - Full</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Standard - Full</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Standard - Full</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Principal - Full</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Principal - Full</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Senior - Full</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Senior - Full</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Standard - Full</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Standard - Full</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Principal - Full</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Principal - Full</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Senior - Full</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Senior - Full</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Standard - Full</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Standard - Full</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Principal - Ramp 1</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Principal - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Senior - Ramp 1</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Senior - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Standard - Ramp 1</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Standard - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Principal - Ramp 1</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Principal - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Senior - Ramp 1</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Senior - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Standard - Ramp 1</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Standard - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Principal - Ramp 1</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Principal - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Senior - Ramp 1</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Senior - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Standard - Ramp 1</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Standard - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Principal - Ramp 1</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Principal - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Senior - Ramp 1</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Senior - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Standard - Ramp 1</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Standard - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Principal - Ramp 1</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Principal - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Senior - Ramp 1</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Senior - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Standard - Ramp 1</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Standard - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Principal - Ramp 1</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Principal - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Senior - Ramp 1</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Senior - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Standard - Ramp 1</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Standard - Ramp 1</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Principal - Ramp 2</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Principal - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Senior - Ramp 2</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Senior - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>AMER - Inbound - Standard - Ramp 2</fullName>
+                <default>false</default>
+                <label>AMER - Inbound - Standard - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Principal - Ramp 2</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Principal - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Senior - Ramp 2</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Senior - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>AMER - Warmbound - Standard - Ramp 2</fullName>
+                <default>false</default>
+                <label>AMER - Warmbound - Standard - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Principal - Ramp 2</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Principal - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Senior - Ramp 2</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Senior - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>APJ - Inbound - Standard - Ramp 2</fullName>
+                <default>false</default>
+                <label>APJ - Inbound - Standard - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Principal - Ramp 2</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Principal - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Senior - Ramp 2</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Senior - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>APJ - Warmbound - Standard - Ramp 2</fullName>
+                <default>false</default>
+                <label>APJ - Warmbound - Standard - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Principal - Ramp 2</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Principal - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Senior - Ramp 2</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Senior - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>EMEA - Inbound - Standard - Ramp 2</fullName>
+                <default>false</default>
+                <label>EMEA - Inbound - Standard - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Principal - Ramp 2</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Principal - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Senior - Ramp 2</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Senior - Ramp 2</label>
+            </value>
+            <value>
+                <fullName>EMEA - Warmbound - Standard - Ramp 2</fullName>
+                <default>false</default>
+                <label>EMEA - Warmbound - Standard - Ramp 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

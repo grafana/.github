@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_s__c</fullName>
+    <description>GrafanaCloud
+Enterprise Subscription
+Pro Subscription
+Basic Subscription
+worldPing
+Training
+metricTank</description>
+    <externalId>false</externalId>
+    <label>Products(OLD)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GrafanaCloud</fullName>
+                <default>false</default>
+                <label>GrafanaCloud</label>
+            </value>
+            <value>
+                <fullName>Enterprise Subscription</fullName>
+                <default>false</default>
+                <label>Enterprise Subscription</label>
+            </value>
+            <value>
+                <fullName>Pro Subscription</fullName>
+                <default>false</default>
+                <label>Pro Subscription</label>
+            </value>
+            <value>
+                <fullName>Basic Subscription</fullName>
+                <default>false</default>
+                <label>Basic Subscription</label>
+            </value>
+            <value>
+                <fullName>worldPing</fullName>
+                <default>false</default>
+                <label>worldPing</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>metricTank</fullName>
+                <default>false</default>
+                <label>metricTank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crystal_Matched_Account_Leads1</fullName>
+    <booleanFilter>(1 OR 3) AND 2 and 4 and 5</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Matched_Account_Owner__c</columns>
+    <columns>Latest_Campaign__c</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Matched_Account_Owner__c</field>
+        <operation>contains</operation>
+        <value>Eymann,Anderson</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Opt-In Untouched,Marketing Auto-Engage,Sales Attempting,Sales In Contact,Disqualified,Unable to Connect,On Hold</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Suhor</value>
+    </filters>
+    <filters>
+        <field>Matched_Account_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Customer</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>contains</operation>
+        <value>Opt-In Untouched</value>
+    </filters>
+    <label>Crystal - Matched Account Leads</label>
+</ListView>

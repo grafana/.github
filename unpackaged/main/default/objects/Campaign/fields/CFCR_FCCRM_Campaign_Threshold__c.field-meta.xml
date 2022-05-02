@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_FCCRM_Campaign_Threshold__c</fullName>
+    <description>Full Circle CRM Field. If used - this number is evaluated as part of the engagement threshold for a new campaign response. Negative values are supported to create responses that below the engagement threshold irrespective of the lead/contact engagement threshold.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Full Circle CRM Field. If used - this number is evaluated as part of the engagement threshold for a new campaign response. Negative values are supported to create responses that below the engagement threshold irrespective of the lead/contact engagement th</inlineHelpText>
+    <label>FCCRM Campaign Threshold</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

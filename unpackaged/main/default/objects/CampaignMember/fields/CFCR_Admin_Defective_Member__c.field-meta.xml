@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Admin_Defective_Member__c</fullName>
+    <description>Campaign Member references a lead that is converted instead of the contact record - member cannot be updated and is considered defective.</description>
+    <externalId>false</externalId>
+    <formula>AND( 
+BEGINS(FCRM__FCR_Lead_Contact_18_Digit_ID__c, '00Q'), 
+OR( 
+Lead.Id = NULL, 
+Lead.IsConverted = True) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Campaign Member references a lead that is converted instead of the contact record - member cannot be updated and is considered defective.</inlineHelpText>
+    <label>Admin Defective Member</label>
+    <type>Checkbox</type>
+</CustomField>

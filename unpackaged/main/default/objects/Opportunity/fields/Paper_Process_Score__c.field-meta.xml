@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paper_Process_Score__c</fullName>
+    <description>Who signs the Grafana SO and what order does the signature process flow in?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>--A score of 0 means the rep doesn’t know what needs to be signed. 
+--A score of 1 means the rep knows everything that has to be signed. 
+--A score of 2 means the rep knows everything that has to be signed, the order in which they need to be signed, and they can closely predict the closing date.</inlineHelpText>
+    <label>Paper Process Score</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

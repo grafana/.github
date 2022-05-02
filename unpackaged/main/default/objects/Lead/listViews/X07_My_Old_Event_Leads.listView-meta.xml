@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X07_My_Old_Event_Leads</fullName>
+    <booleanFilter>(1 OR 6) AND 2 AND 3 AND 4 AND 5 and (7 or 8)</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>Latest_Campaign__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Latest_Campaign__c</field>
+        <operation>contains</operation>
+        <value>2020-05 GrafanaCONline Main registration,2020-10 Grafana ObservabilityCon Regist</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Non Opt-In (Illegal),Customer</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL_OPT_OUT</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>LEAD.CONVERTED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <filters>
+        <field>Latest_Campaign__c</field>
+        <operation>equals</operation>
+        <value>2021-06 GrafanaCONline Registration</value>
+    </filters>
+    <filters>
+        <field>LEAD.COUNTRY</field>
+        <operation>contains</operation>
+        <value>Japan,Singapore,Taiwan,Hong Kong,Australia,New Zealand,South Korea,India</value>
+    </filters>
+    <filters>
+        <field>LEAD.COUNTRY</field>
+        <operation>contains</operation>
+        <value>Thailand,Vietnam,Malaysia,Indonesia</value>
+    </filters>
+    <label>Vitto - Old Event Leads</label>
+</ListView>

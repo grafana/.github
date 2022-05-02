@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_SAL_to_SCL__c</fullName>
+    <description># Days from SAL to SCL - Evaluates to blank if SCL Date is blank.</description>
+    <externalId>false</externalId>
+    <formula>CFCR_SCL_Date__c -  FCRM__FCR_SAR_Date__c</formula>
+    <inlineHelpText># Days from SAL to SCL</inlineHelpText>
+    <label>SAL to SCL</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

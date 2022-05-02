@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Exclude_From_Campaign_Influence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked this record will be excluded from Full Circle Campaign Influence Calculations</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked this record will be excluded from Full Circle Campaign Influence Calculations</inlineHelpText>
+    <label>Exclude From Campaign Influence</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

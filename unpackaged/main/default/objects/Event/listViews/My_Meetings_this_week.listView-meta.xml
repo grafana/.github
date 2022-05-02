@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Meetings_this_week</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHO_NAME</columns>
+    <columns>START_DATE_TIME</columns>
+    <columns>TYPE</columns>
+    <columns>Call_Type__c</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>Opportunity_Stage__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Event.Standard</value>
+    </filters>
+    <filters>
+        <field>START_DATE_TIME</field>
+        <operation>equals</operation>
+        <value>THIS_WEEK</value>
+    </filters>
+    <label>My Meetings this week</label>
+</ListView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Plan</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Opportunity_Owner_Territory__c</columns>
+    <columns>ACVServicesPrimaryQuote__c</columns>
+    <columns>Bridge_Deal__c</columns>
+    <columns>Management_Forecast__c</columns>
+    <columns>Forecast_Category__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>renewal</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>Andrew Calvert,Raj Dutt,Dmytro Ivanyna,Chris Williamson,Phillip Craig,Ulrich,John Khawam,Edward Spencer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ia_crm__Contract</value>
+    </filters>
+    <filters>
+        <field>Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>Upside,Best Case,Green Zone,Commit</value>
+    </filters>
+    <filters>
+        <field>Bridge_Deal__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Owner_Territory__c</field>
+        <operation>contains</operation>
+        <value>west,east,oem,federal,apac,emea,central</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Qualified,Discovery,Evaluation,Verbal Commit/Tech Win,Contracting/Negotiation,Booking Review,Deal Won</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>4/30/2022</value>
+    </filters>
+    <label>Bridge Plan</label>
+    <sharedTo>
+        <group>Global_Sales_Leadership</group>
+    </sharedTo>
+</ListView>

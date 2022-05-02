@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_Campaign_Members__c</fullName>
+    <description>This field counts the number of Campaign Members are related to an Account using the Matched Account field. It is populated by DLRS.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field counts the number of Campaign Members are related to an Account using the Matched Account field. It is populated by DLRS.</inlineHelpText>
+    <label>Count Campaign Members</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

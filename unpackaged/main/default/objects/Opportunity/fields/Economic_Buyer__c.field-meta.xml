@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Economic_Buyer__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Who is the EB? Have you met the EB &amp; established a relationship?</inlineHelpText>
+    <label>Economic Buyer</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gcom_Org_Slug__c</fullName>
+    <description>This field populates with the account level org slug, if present, if it is blank there is no org slug on this account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field populates with the account level org slug, if present, if it is blank there is no org slug on this account.</inlineHelpText>
+    <label>Gcom Org Slug</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

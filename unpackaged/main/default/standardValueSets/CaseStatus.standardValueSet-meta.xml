@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Backlog</fullName>
+        <default>true</default>
+        <label>Backlog</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>To Do</fullName>
+        <default>false</default>
+        <label>To Do</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow-Up</fullName>
+        <default>false</default>
+        <label>Follow-Up</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Blocked</fullName>
+        <default>false</default>
+        <label>Blocked</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Done</fullName>
+        <default>false</default>
+        <label>Done</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merged</fullName>
+        <default>false</default>
+        <label>Merged</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

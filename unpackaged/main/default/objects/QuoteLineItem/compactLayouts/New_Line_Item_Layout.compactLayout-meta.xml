@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Line_Item_Layout</fullName>
+    <fields>Product2Id</fields>
+    <fields>UnitPrice</fields>
+    <fields>Quantity</fields>
+    <fields>Discount</fields>
+    <fields>TotalPrice</fields>
+    <label>New Line Item Layout</label>
+</CompactLayout>

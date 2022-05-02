@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Contract_Expiration_Date__c</fullName>
+    <description>This date field shows the date of the previous contract open on an account and shows it on the opportunity</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This date field shows the date of the previous contract open on an account and shows it on the opportunity</inlineHelpText>
+    <label>Previous Contract Expiration Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

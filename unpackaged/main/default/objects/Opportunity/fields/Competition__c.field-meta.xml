@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competition__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What alternative solutions exist to solve their pain? How do they compare on decision criteria? Who is the competition's champion? How do we lock-out the competition?</inlineHelpText>
+    <label>Competition</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

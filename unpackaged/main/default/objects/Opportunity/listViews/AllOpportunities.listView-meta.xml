@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllOpportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Products_c__c</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.WON</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>champion__c</columns>
+    <columns>OPPORTUNITY.FISCAL_YEAR</columns>
+    <columns>Pain__c</columns>
+    <columns>Notes__c</columns>
+    <columns>fid8__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Deal Won</value>
+    </filters>
+    <label>All Opportunities</label>
+</ListView>

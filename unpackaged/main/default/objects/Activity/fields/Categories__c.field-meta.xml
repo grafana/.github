@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categories__c</fullName>
+    <description>This is the CSM Categories from Catalyst</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the CSM Categories from Catalyst</inlineHelpText>
+    <label>Categories</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Feedback</fullName>
+                <default>false</default>
+                <label>Customer Feedback</label>
+            </value>
+            <value>
+                <fullName>CX Summary</fullName>
+                <default>false</default>
+                <label>CX Summary</label>
+            </value>
+            <value>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+                <label>Feature Request</label>
+            </value>
+            <value>
+                <fullName>QBR</fullName>
+                <default>false</default>
+                <label>QBR</label>
+            </value>
+            <value>
+                <fullName>Quick Chat</fullName>
+                <default>false</default>
+                <label>Quick Chat</label>
+            </value>
+            <value>
+                <fullName>Recurring Meeting</fullName>
+                <default>false</default>
+                <label>Recurring Meeting</label>
+            </value>
+            <value>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+                <label>Renewal</label>
+            </value>
+            <value>
+                <fullName>Success Plan</fullName>
+                <default>false</default>
+                <label>Success Plan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

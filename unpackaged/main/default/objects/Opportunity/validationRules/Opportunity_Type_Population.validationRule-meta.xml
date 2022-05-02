@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Type_Population</fullName>
+    <active>false</active>
+    <description>When an opportunity is in a stage greater than or equal to AE Discovery, the Opportunity Type field must be populated.</description>
+    <errorConditionFormula>AND (
+  OR (
+     ISPICKVAL(StageName, "Deal Won"),
+     ISPICKVAL(StageName, "Deal Lost"),
+     ISPICKVAL(StageName, "Contracting/Negotiation"),
+     ISPICKVAL(StageName, "Verbal Commit/Tech Win"),
+     ISPICKVAL(StageName, "Trial"),
+     ISPICKVAL(StageName, "Discovery")),   
+     ISBLANK(TEXT( Type ))
+)</errorConditionFormula>
+    <errorMessage>Please populate the Opportunity Type field. 
+New Business = NACV. 
+Existing Business = Upsell. 
+Renewal = Renewal, obviously...</errorMessage>
+</ValidationRule>

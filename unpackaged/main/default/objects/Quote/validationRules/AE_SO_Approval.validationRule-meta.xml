@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AE_SO_Approval</fullName>
+    <active>true</active>
+    <description>AE is only able to move SO to Needs Review, Presented, Accepted, Denied.</description>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; "Sales Leadership",
+$Profile.Name &lt;&gt; "System Administrator",
+ISPICKVAL(Status, "In Review"),
+ISPICKVAL(Status, "Approved"),
+ISPICKVAL(Status, "Rejected"))</errorConditionFormula>
+    <errorMessage>Only Sales Leadership is able to move quote to this Status.</errorMessage>
+</ValidationRule>

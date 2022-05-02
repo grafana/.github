@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_for_Finance__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checking this box notifies finance of the opportunity and that it is ready for review</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checking this box notifies finance of the opportunity and that it is ready for review</inlineHelpText>
+    <label>Ready for Finance</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

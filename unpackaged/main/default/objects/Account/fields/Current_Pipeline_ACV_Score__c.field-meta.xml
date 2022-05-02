@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Pipeline_ACV_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( Current_Pipeline_Amount__c  &gt;= 250000, 60,
+IF ( Current_Pipeline_Amount__c &gt;= 100000, 45,
+IF ( Current_Pipeline_Amount__c &gt;= 25000, 30,
+IF ( Current_Pipeline_Amount__c &lt; 25000, 15, 15))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Current Pipeline ACV Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CR_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK (  CFCR_OPP_User__c  ), 
+
+(IF(NOT(ISBLANK( ContactId )),  Contact.Owner.FirstName+ " " +Contact.Owner.LastName,  Lead.Owner:User.FirstName+ " " +Lead.Owner:User.LastName)),
+
+ CFCR_OPP_User__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CR Owner</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

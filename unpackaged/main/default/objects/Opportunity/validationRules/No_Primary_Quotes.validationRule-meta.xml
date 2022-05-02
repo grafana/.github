@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Primary_Quotes</fullName>
+    <active>true</active>
+    <description>Throws an error when there is no quote that has been marked as primary on the opportunity. The rep cannot move past the Discovery stage.</description>
+    <errorConditionFormula>AND(
+ $CustomMetadata.Bypass_Settings__mdt.Validation.Opportunity__c = FALSE,
+ $Permission.Bypass_Validation_Rules_Global = FALSE,
+ ISCHANGED(StageName),
+ ISBLANK(SBQQ__PrimaryQuote__c ) ,
+ !CONTAINS($UserRole.Name, "SDR"),
+OR(
+ISPICKVAL(StageName, "Technical Validation"),
+ISPICKVAL(StageName, "Champion Alignment"),
+ISPICKVAL(StageName, "Evaluation"),
+ISPICKVAL(StageName, "Contracting"),
+ISPICKVAL(StageName, "Booking Review"),
+ISPICKVAL(StageName, "Deal Won")
+))</errorConditionFormula>
+    <errorMessage>You must have a created and synced Primary quote on the opportunity in order to progress past Stage 1 (Qualifying opportunity). Please create a Primary quote and sync it to proceed.</errorMessage>
+</ValidationRule>

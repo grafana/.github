@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Created_Accounts</fullName>
+    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Sales</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Operations</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT_SOURCE</field>
+        <operation>equals</operation>
+        <value>Self Serve</value>
+    </filters>
+    <label>Auto Created Accounts</label>
+    <sharedTo>
+        <group>Global_Sales_Leadership</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEDDPICC_Total__c</fullName>
+    <description>Calculated by taking the sum of each MEDPICC Score field and giving it a total. Economic Buyer, Champion and Identified Pain are worth 1.65 points, opposed to the others only being worth 1 point.</description>
+    <externalId>false</externalId>
+    <formula>(VALUE(TEXT( Champion_Score__c ))*1.65) + VALUE(TEXT( Competition_Score__c )) + VALUE(TEXT( Decision_Criteria_Score__c )) + VALUE(TEXT( Decision_Process_Score__c )) + (VALUE(TEXT( Economic_Buyer_Score__c ))*1.65) + (VALUE(TEXT( Identified_Pain_Score__c ))*1.65) + VALUE(TEXT( Metrics_Score__c )) + VALUE(TEXT( Paper_Process_Score__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculated by taking the sum of each MEDPICC Score field and giving it a total. Economic Buyer, Champion and Identified Pain are worth 1.65 points, opposed to the others only being worth 1 point.</inlineHelpText>
+    <label>MEDDPICC Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

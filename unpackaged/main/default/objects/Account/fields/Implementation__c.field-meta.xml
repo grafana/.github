@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Implementation__c</fullName>
+    <externalId>false</externalId>
+    <label>Implementation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Professional Services Team</fullName>
+                <default>false</default>
+                <label>Professional Services Team</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Self-Implemented</fullName>
+                <default>false</default>
+                <label>Self-Implemented</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACVwithServices__c</fullName>
+    <description>combines the ACV and the Services value</description>
+    <externalId>false</externalId>
+    <formula>AnnualContractValueACV__c +  Services__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Combines the ACV and the Services amounts</inlineHelpText>
+    <label>ACV with Services</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

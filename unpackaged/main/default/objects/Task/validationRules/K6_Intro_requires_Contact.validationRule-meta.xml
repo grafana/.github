@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>K6_Intro_requires_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(ISPICKVAL(Call_Type__c,"K6 Intro"),ISBLANK(WhoId))</errorConditionFormula>
+    <errorDisplayField>WhoId</errorDisplayField>
+    <errorMessage>Please associate a contact to this task for K6 to follow up with</errorMessage>
+</ValidationRule>

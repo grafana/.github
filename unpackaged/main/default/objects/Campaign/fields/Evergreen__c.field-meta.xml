@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evergreen__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This denotes that there is no date necessary for the campaign</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This denotes that there is no date necessary for the campaign</inlineHelpText>
+    <label>Evergreen?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

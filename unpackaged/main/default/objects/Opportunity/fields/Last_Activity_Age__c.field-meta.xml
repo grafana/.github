@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Activity_Age__c</fullName>
+    <description># of business days between Last Activity and today</description>
+    <externalId>false</externalId>
+    <formula>(5 * ( FLOOR( ( TODAY() - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD( TODAY() - DATE( 1900, 1, 8), 7 ) ) )
+-
+(5 * ( FLOOR( ( LastActivityDate   - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD(LastActivityDate  - DATE( 1900, 1, 8), 7 ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>this field counts the number of business days between last activity and today</inlineHelpText>
+    <label>Last Activity Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

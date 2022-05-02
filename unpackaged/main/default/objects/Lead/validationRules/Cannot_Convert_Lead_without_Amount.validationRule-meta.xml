@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Convert_Lead_without_Amount</fullName>
+    <active>false</active>
+    <description>In order to convert a lead, the amount field must be populated if you're an SDR</description>
+    <errorConditionFormula>AND(CONTAINS($User.Role_Name__c,'SDR'), ISBLANK( Opportunity_Amount__c ),  IsConverted = True)</errorConditionFormula>
+    <errorMessage>Please enter an opportunity amount in order to convert this lead.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Still_in_S0__c</fullName>
+    <externalId>false</externalId>
+    <formula>Stage_0_Exploration__c &amp;&amp; ISPICKVAL(StageName , "Qualifying Opportunity")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Still in S0</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

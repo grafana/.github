@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Active_Status_Reactivation_Date__c</fullName>
+    <description>Date active status reactivation fired</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date active status reactivation fired</inlineHelpText>
+    <label>Active Status Reactivation Date</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

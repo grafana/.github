@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>T/F on whether a demo occurred or not during this particular call log activity for the Troops.ai integration.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Did a demo occur during this call?</inlineHelpText>
+    <label>Demo?</label>
+    <type>Checkbox</type>
+</CustomField>

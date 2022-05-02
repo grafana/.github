@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSM_Churn_Call_Must_Be_Negative</fullName>
+    <active>true</active>
+    <errorConditionFormula>CSM_Churn_Call__c &gt; 0</errorConditionFormula>
+    <errorDisplayField>CSM_Churn_Call__c</errorDisplayField>
+    <errorMessage>Churn Call Must Be Negative</errorMessage>
+</ValidationRule>

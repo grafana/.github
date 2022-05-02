@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Task</fullName>
+    <active>true</active>
+    <label>Standard Task</label>
+    <picklistValues>
+        <picklist>Call_Disposition__c</picklist>
+        <values>
+            <fullName>Answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Purposes__c</picklist>
+        <values>
+            <fullName>Demo Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow-up Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Introduction Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Type__c</picklist>
+        <values>
+            <fullName>Autoengage reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BVA %28Business Value Assessment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EB Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K6 Intro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBM %28New Business Meeting%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POV %28Undefined%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POV Kickoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POV Midpoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POV Wrap up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TDD %28Tech Deep Dive%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Categories__c</picklist>
+        <values>
+            <fullName>CX Summary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QBR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quick Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success Plan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>Autoresponse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K6 Intro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>CS Business Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Check-ins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Internal Renewal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial - Check In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial - Deactivate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial - Start</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

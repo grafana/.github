@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intacct_GL_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Intacct GL Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cloud contracted additional usage</fullName>
+                <default>false</default>
+                <label>Cloud contracted additional usage</label>
+            </value>
+            <value>
+                <fullName>Cloud contracted subscription</fullName>
+                <default>false</default>
+                <label>Cloud contracted subscription</label>
+            </value>
+            <value>
+                <fullName>Cloud self-serve additional usage</fullName>
+                <default>false</default>
+                <label>Cloud self-serve additional usage</label>
+            </value>
+            <value>
+                <fullName>Cloud self-service subscription</fullName>
+                <default>false</default>
+                <label>Cloud self-service subscription</label>
+            </value>
+            <value>
+                <fullName>Enterprise additional usage</fullName>
+                <default>false</default>
+                <label>Enterprise additional usage</label>
+            </value>
+            <value>
+                <fullName>Enterprise licensing</fullName>
+                <default>false</default>
+                <label>Enterprise licensing</label>
+            </value>
+            <value>
+                <fullName>Enterprise support</fullName>
+                <default>false</default>
+                <label>Enterprise support</label>
+            </value>
+            <value>
+                <fullName>Expenses-Commissions</fullName>
+                <default>false</default>
+                <label>Expenses-Commissions</label>
+            </value>
+            <value>
+                <fullName>Other revenue</fullName>
+                <default>false</default>
+                <label>Other revenue</label>
+            </value>
+            <value>
+                <fullName>Professional services</fullName>
+                <default>false</default>
+                <label>Professional services</label>
+            </value>
+            <value>
+                <fullName>Sales credits</fullName>
+                <default>false</default>
+                <label>Sales credits</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

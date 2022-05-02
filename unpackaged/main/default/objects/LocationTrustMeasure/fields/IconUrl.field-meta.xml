@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IconUrl</fullName>
+    <inlineHelpText>The URL where your icon is hosted. You create and host the icon for each trust measure.</inlineHelpText>
+</CustomField>

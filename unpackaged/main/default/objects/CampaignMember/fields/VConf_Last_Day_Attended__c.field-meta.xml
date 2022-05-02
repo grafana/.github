@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VConf_Last_Day_Attended__c</fullName>
+    <description>The most recent day a virtual conference attendee has viewed content live</description>
+    <externalId>false</externalId>
+    <label>VConf Last Day Attended</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

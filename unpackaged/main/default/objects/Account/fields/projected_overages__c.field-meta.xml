@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>projected_overages__c</fullName>
+    <description>The Google Cloud overage amount projected for this month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Google Cloud overage amount projected for this month.</inlineHelpText>
+    <label>Projected Overages</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

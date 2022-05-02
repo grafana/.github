@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country__c</fullName>
+    <externalId>false</externalId>
+    <label>Country</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Geo__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>United States</fullName>
+                <default>false</default>
+                <label>United States</label>
+            </value>
+            <value>
+                <fullName>Canada</fullName>
+                <default>false</default>
+                <label>Canada</label>
+            </value>
+            <value>
+                <fullName>Australia</fullName>
+                <default>false</default>
+                <label>Australia</label>
+            </value>
+            <value>
+                <fullName>France</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>Germany</fullName>
+                <default>false</default>
+                <label>Germany</label>
+            </value>
+            <value>
+                <fullName>Spain</fullName>
+                <default>false</default>
+                <label>Spain</label>
+            </value>
+            <value>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+                <label>United Kingdom</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>AMER</controllingFieldValue>
+            <valueName>United States</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMER</controllingFieldValue>
+            <valueName>Canada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Spain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>United Kingdom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC</controllingFieldValue>
+            <valueName>Australia</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

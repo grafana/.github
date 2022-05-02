@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA_Next_Steps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>ACVServicesPrimaryQuote__c</columns>
+    <columns>NextSteps__c</columns>
+    <columns>MEDDPICC_Total__c</columns>
+    <columns>DateofLastEBMeeting__c</columns>
+    <columns>DateofLastW__c</columns>
+    <columns>Management_Forecast__c</columns>
+    <columns>Forecast_Category__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>4/30/2022</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>renewal</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Deal Won,Deal Lost</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>Andrew Calvert,Dmytro Ivanyna,Chris Williamson,Phillip Craig,Ulrich,John Khawam,Edward Spencer</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>wurm,craciun,frank,vuorela,linssen,schafer,pacula,handley,strang,hepburn,hofbauer</value>
+    </filters>
+    <filters>
+        <field>Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>Best Case,Green Zone,Commit</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ia_crm__Contract</value>
+    </filters>
+    <label>EMEA Next Steps</label>
+</ListView>

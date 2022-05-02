@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Member_Deletion_Prevention</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(PRIORVALUE(Member_Count_for_Validation__c) &gt;  Member_Count_for_Validation__c, NOT($Permission.Campaign_Validation_Rule_Exclusion))</errorConditionFormula>
+    <errorMessage>You cannot remove a campaign member from a campaign unless you are a marketing or system administrator user.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSM_Churn_Renewal_Health_Required</fullName>
+    <active>true</active>
+    <description>Prompt to provide Renewal Health</description>
+    <errorConditionFormula>AND(
+    NOT( ISNULL(  CSM_Churn_Call__c  ) ),
+    ISPICKVAL( Renewal_Health__c ,"")
+)</errorConditionFormula>
+    <errorDisplayField>Renewal_Health__c</errorDisplayField>
+    <errorMessage>Please Select the Renewal Health</errorMessage>
+</ValidationRule>

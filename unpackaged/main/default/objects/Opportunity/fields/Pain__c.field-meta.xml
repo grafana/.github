@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pain__c</fullName>
+    <description>The impetus for any kind of organizational or process change</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Why anything - Business Pain moves you up in the org., technical pain moves you down - Why now? What are consequences? What is the urgency?</inlineHelpText>
+    <label>Initiative/Pain</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

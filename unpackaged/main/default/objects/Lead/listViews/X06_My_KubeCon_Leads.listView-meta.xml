@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X06_My_KubeCon_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>Matched_Account_Name__c</columns>
+    <columns>Matched_Account_Owner__c</columns>
+    <columns>Notes__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN_MEMBER.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Not technically qualified</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Non Opt-In (Illegal),Marketing Auto-Engage</value>
+    </filters>
+    <label>06 - My KubeCon Leads</label>
+</ListView>

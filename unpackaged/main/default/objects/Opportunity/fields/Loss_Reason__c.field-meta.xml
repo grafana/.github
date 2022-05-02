@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Staying with Open Source</fullName>
+                <default>false</default>
+                <label>Staying with Open Source</label>
+            </value>
+            <value>
+                <fullName>Pain&lt;&gt;Price Mismatch</fullName>
+                <default>false</default>
+                <label>Pain&lt;&gt;Price Mismatch</label>
+            </value>
+            <value>
+                <fullName>Timing is not there</fullName>
+                <default>false</default>
+                <label>Timing is not there</label>
+            </value>
+            <value>
+                <fullName>Unresponsive: Went dark</fullName>
+                <default>false</default>
+                <label>Unresponsive: Went dark</label>
+            </value>
+            <value>
+                <fullName>Moved to/Stayed with Self Serve</fullName>
+                <default>false</default>
+                <label>Moved to/Stayed with Self Serve</label>
+            </value>
+            <value>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>Missing features</fullName>
+                <default>false</default>
+                <label>Missing features</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Stale - Ops Cleanup</fullName>
+                <default>false</default>
+                <label>Stale - Ops Cleanup</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Staying with Open Source</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Pain&lt;&gt;Price Mismatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Timing is not there</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Unresponsive: Went dark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Moved to/Stayed with Self Serve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Lost to Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Missing features</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deal Lost</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

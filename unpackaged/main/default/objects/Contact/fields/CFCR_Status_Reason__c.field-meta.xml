@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Status_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Status Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FCRM__FCR_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>Researcher/ press/ analyst</fullName>
+                <default>false</default>
+                <label>Researcher/ press/ analyst</label>
+            </value>
+            <value>
+                <fullName>Moved to Self Service</fullName>
+                <default>false</default>
+                <label>Moved to Self Service</label>
+            </value>
+            <value>
+                <fullName>Not involved with Grafana-related software</fullName>
+                <default>false</default>
+                <label>Not involved with Grafana-related software</label>
+            </value>
+            <value>
+                <fullName>Bad email</fullName>
+                <default>false</default>
+                <label>Bad email</label>
+            </value>
+            <value>
+                <fullName>Bad phone</fullName>
+                <default>false</default>
+                <label>Bad phone</label>
+            </value>
+            <value>
+                <fullName>No longer at company</fullName>
+                <default>false</default>
+                <label>No longer at company</label>
+            </value>
+            <value>
+                <fullName>Exhausted tries</fullName>
+                <default>false</default>
+                <label>Exhausted tries</label>
+            </value>
+            <value>
+                <fullName>Reach out in [timeline]</fullName>
+                <default>false</default>
+                <label>Reach out again - include timeline in notes</label>
+            </value>
+            <value>
+                <fullName>Budget, Not a priority now</fullName>
+                <default>false</default>
+                <label>Budget, Not a priority now</label>
+            </value>
+            <value>
+                <fullName>Went silent</fullName>
+                <default>false</default>
+                <label>Went silent</label>
+            </value>
+            <value>
+                <fullName>Support request</fullName>
+                <default>false</default>
+                <label>Support request</label>
+            </value>
+            <value>
+                <fullName>Vendor spam</fullName>
+                <default>false</default>
+                <label>Vendor spam</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Missing feature</fullName>
+                <default>false</default>
+                <label>Missing feature</label>
+            </value>
+            <value>
+                <fullName>Stale - Ops Clean Up</fullName>
+                <default>false</default>
+                <label>Stale - Ops Clean Up</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Unable to Connect</controllingFieldValue>
+            <valueName>Bad email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to Connect</controllingFieldValue>
+            <valueName>Bad phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to Connect</controllingFieldValue>
+            <valueName>No longer at company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to Connect</controllingFieldValue>
+            <valueName>Exhausted tries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to Connect</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Stale - Ops Clean Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Moved to Self Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Reach out in [timeline]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Budget, Not a priority now</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Went silent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Student</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Researcher/ press/ analyst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Not involved with Grafana-related software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Support request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Vendor spam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disqualified</controllingFieldValue>
+            <valueName>Missing feature</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acct_Owner_Unable_to_be_Changed_by_Rep</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(OwnerId),
+$Profile.Name = "Grafana Sales" || $Profile.Name = "Grafana Sales Leadership"
+)</errorConditionFormula>
+    <errorMessage>You are unable to change the account owner. Please reach out to Alexis Hensel.</errorMessage>
+</ValidationRule>

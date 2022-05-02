@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Use_Overages</fullName>
+    <active>false</active>
+    <description>Salesforce users cannot utilize the overages product in salesforce. This is only for Intacct to be able to bill.</description>
+    <errorConditionFormula>Product2.ProductCode == 'OVERAGE'</errorConditionFormula>
+    <errorDisplayField>Product2Id</errorDisplayField>
+    <errorMessage>The Product 'Overages' is not eligible for quoting. Please reach out to Deal Ops or Finance for more information and assistance.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_S7__c</fullName>
+    <externalId>false</externalId>
+    <formula>FCRM__FCR_Opportunity__r.CFCR_S7__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>S7</label>
+    <type>Checkbox</type>
+</CustomField>

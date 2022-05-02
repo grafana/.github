@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metrics__c</fullName>
+    <description>What is the economic impact of the solution? i.e. Cost Reduction, Risk Avoidance Increased  Revenue/Market Share in dollars.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the economic impact of the solution? i.e. Cost Reduction, Risk Avoidance Increased  Revenue/Market Share in dollars.</inlineHelpText>
+    <label>Metrics</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

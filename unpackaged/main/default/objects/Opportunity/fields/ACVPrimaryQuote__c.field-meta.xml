@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACVPrimaryQuote__c</fullName>
+    <description>This is the ACV for the primary quote</description>
+    <externalId>false</externalId>
+    <formula>IF(
+SBQQ__PrimaryQuote__r.SBQQ__SubscriptionTerm__c &gt; 12,
+
+(  TCVPrimaryQuote__c / SBQQ__PrimaryQuote__r.SBQQ__SubscriptionTerm__c) * 12,
+
+TCVPrimaryQuote__c
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the ACV for the primary quote</inlineHelpText>
+    <label>ACV (Primary Quote)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

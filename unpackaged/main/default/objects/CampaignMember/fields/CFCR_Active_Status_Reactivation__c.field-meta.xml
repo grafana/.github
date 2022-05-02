@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Active_Status_Reactivation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set by the active status reactivation scenario</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set by the active status reactivation scenario</inlineHelpText>
+    <label>Active Status Reactivation</label>
+    <type>Checkbox</type>
+</CustomField>

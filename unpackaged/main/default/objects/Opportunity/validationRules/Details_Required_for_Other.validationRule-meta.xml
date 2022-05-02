@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Details_Required_for_Other</fullName>
+    <active>true</active>
+    <description>If none of the 5 sales plays are selected, details are required for others</description>
+    <errorConditionFormula>AND(ISPICKVAL(Sales_Play__c, "Other (details required)"), ISBLANK(Sales_Play_Details__c))</errorConditionFormula>
+    <errorDisplayField>Sales_Play__c</errorDisplayField>
+    <errorMessage>Please provide details for why this deal doesn't meet our 5 sales plays.
+
+These will be reviewed on a quarterly basis.</errorMessage>
+</ValidationRule>

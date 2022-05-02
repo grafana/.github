@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortOrder</fullName>
+    <inlineHelpText>Indicates where this trust measure is positioned in your layout. For example, in a banner layout, a display order of 1 places the trust card to the left. A display order of 2 places the trust measure to the right of 1.</inlineHelpText>
+</CustomField>

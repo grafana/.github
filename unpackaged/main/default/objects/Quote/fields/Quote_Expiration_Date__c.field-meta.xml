@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Expiration_Date__c</fullName>
+    <description>This field should be populated for the date the quote EXPIRES after being sent to the customer.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field should be populated for the date the quote EXPIRES after being sent to the customer.</inlineHelpText>
+    <label>Quote Expiration Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

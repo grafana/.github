@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X07_My_On_Hold_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Notes__c</columns>
+    <columns>Campaign__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>On Hold</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_ACTIVITY</field>
+        <operation>notEqual</operation>
+        <value>LAST_N_DAYS:45</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL_OPT_OUT</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>07 - My On Hold Leads</label>
+</ListView>

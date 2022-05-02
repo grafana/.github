@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Actionable__c</fullName>
+    <description>True if the response status was opened. Indicates response was actionable.</description>
+    <externalId>false</externalId>
+    <formula>AND(
+NOT(
+OR(
+ISPICKVAL(FCRM__FCR_Response_Status__c,"Resolved - No Action Required"), 
+ISPICKVAL(FCRM__FCR_Response_Status__c,"Resolved - Already Engaged"), 
+ISPICKVAL(FCRM__FCR_Response_Status__c,"Not a Response"),
+ISPICKVAL(FCRM__FCR_Response_Status__c,"Legacy"),  
+ISPICKVAL(FCRM__FCR_Response_Status__c,""))
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>True if the response status was opened. Indicates response was actionable.</inlineHelpText>
+    <label>Actionable</label>
+    <type>Checkbox</type>
+</CustomField>

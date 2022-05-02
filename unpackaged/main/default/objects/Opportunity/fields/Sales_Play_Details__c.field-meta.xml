@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Play_Details__c</fullName>
+    <description>This field gives the details behind why the Sales Play is custom</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide details as to what the use case is for this deal that doesn't meet our 5 sales plays.
+
+These will be reviewed on a quarterly basis.</inlineHelpText>
+    <label>Sales Play Details</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Transaction Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerated</fullName>
+                <default>false</default>
+                <label>Accelerated</label>
+            </value>
+            <value>
+                <fullName>Fulfillment</fullName>
+                <default>false</default>
+                <label>Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Incremental</fullName>
+                <default>false</default>
+                <label>Incremental</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

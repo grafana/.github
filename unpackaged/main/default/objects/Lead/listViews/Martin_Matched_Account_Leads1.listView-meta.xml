@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Martin_Matched_Account_Leads1</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Latest_Campaign__c</columns>
+    <columns>Matched_Account_Owner__c</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Matched_Account_Owner__c</field>
+        <operation>equals</operation>
+        <value>Kevin Hanson,Travis Cella</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Opt-In Untouched,Sales Attempting,Sales In Contact,Unable to Connect,On Hold</value>
+    </filters>
+    <filters>
+        <field>LEAD.PHONE</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Martin - Matched Account Leads w/ Phone</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>SDR_West</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

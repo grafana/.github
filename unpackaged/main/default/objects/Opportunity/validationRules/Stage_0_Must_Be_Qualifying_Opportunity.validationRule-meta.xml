@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_0_Must_Be_Qualifying_Opportunity</fullName>
+    <active>true</active>
+    <description>Opportunity must be in the stage Qualifying Opportunity if the Stage 0 - Exploration checkbox is checked.</description>
+    <errorConditionFormula>AND( 
+  $CustomMetadata.Bypass_Settings__mdt.Validation.Opportunity__c = FALSE,
+  $Permission.Bypass_Validation_Rules_Global = FALSE,
+  Stage_0_Exploration__c = TRUE,
+  NOT(ISPICKVAL(StageName,'Qualifying Opportunity')),
+  NOT(ISPICKVAL(StageName,'Deal Lost')),
+  OR( ISCHANGED(Stage_0_Exploration__c),
+      ISCHANGED(StageName))
+)</errorConditionFormula>
+    <errorMessage>To move past 'Stage 1 - Qualifying', please uncheck 'Stage 0 - Exploration' checkbox.</errorMessage>
+</ValidationRule>

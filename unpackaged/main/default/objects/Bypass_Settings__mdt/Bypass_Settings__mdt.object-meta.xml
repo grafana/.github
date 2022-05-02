@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Bypass settings are used to bypass validation rules, declarative or apex code. Each object has a checkbox, and each record should be referenced by validation rules, declarative or apex code.</description>
+    <label>Bypass Settings</label>
+    <pluralLabel>Bypass Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

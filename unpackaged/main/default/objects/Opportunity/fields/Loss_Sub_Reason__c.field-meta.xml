@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Sub_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Sub-Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Loss_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New to Self Serve</fullName>
+                <default>false</default>
+                <label>New to Self Serve</label>
+            </value>
+            <value>
+                <fullName>Existing Self Serve</fullName>
+                <default>false</default>
+                <label>Existing Self Serve</label>
+            </value>
+            <value>
+                <fullName>Lost funding</fullName>
+                <default>false</default>
+                <label>Lost funding</label>
+            </value>
+            <value>
+                <fullName>Price too high</fullName>
+                <default>false</default>
+                <label>Price too high</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Moved to/Stayed with Self Serve</controllingFieldValue>
+            <valueName>New to Self Serve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Moved to/Stayed with Self Serve</controllingFieldValue>
+            <valueName>Existing Self Serve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pain&lt;&gt;Price Mismatch</controllingFieldValue>
+            <valueName>Lost funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pain&lt;&gt;Price Mismatch</controllingFieldValue>
+            <valueName>Price too high</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

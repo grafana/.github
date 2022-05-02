@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Prod_Line_Term_Override__c</fullName>
+    <description>This field is designed as a temporary override of the 'Opp Prod Line Term' field to account for historical Opp/Product data that was created before CPQ was rolled out. This should be deleted after a full migration to CPQ architecture is completed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is designed as a temporary override of the 'Opp Prod Line Term' field to account for historical Opp/Product data that was created before CPQ was rolled out. This should be deleted after a full migration to CPQ architecture is completed.</inlineHelpText>
+    <label>Opp Prod Line Term (Override)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

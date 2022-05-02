@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Revenue_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( ClearbitEstimatedRevenue__c = "$10B+", 80,
+IF ( ClearbitEstimatedRevenue__c = "$1B-$10B", 60,
+IF ( ClearbitEstimatedRevenue__c = "$500M-$1B", 40,
+IF ( ClearbitEstimatedRevenue__c = "$250M-$500M", 40, 20))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Company Revenue Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

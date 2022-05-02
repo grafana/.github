@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Notes</fullName>
+    <active>true</active>
+    <description>Why, specifically, did we lose this deal.</description>
+    <errorConditionFormula>AND (
+  NOT(ISBLANK(TEXT( Loss_Reason__c ))),
+  ISBLANK( Deal__c )
+)</errorConditionFormula>
+    <errorDisplayField>Deal__c</errorDisplayField>
+    <errorMessage>Why did we lose this deal?
+
+If missing features, add which features.
+
+If loss reason is other - include what new loss reason this would be.</errorMessage>
+</ValidationRule>

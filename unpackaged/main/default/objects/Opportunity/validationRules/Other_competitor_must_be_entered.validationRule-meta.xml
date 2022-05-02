@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_competitor_must_be_entered</fullName>
+    <active>false</active>
+    <description>When "other" is selected as the primary or secondary competitor, other cannot be blank.</description>
+    <errorConditionFormula>IF( OR(ISPICKVAL(Primary_Competitor__c, "Other"), ISPICKVAL(Secondary_Competitor__c, "Other")) , ISBLANK( Other_Competitor__c),NOT(ISBLANK( Other_Competitor__c)))</errorConditionFormula>
+    <errorDisplayField>Other_Competitor__c</errorDisplayField>
+    <errorMessage>If "Other" is selected as the primary or secondary competitor, you must populate the Other Competitor field. If "Other Competitor" is populated you must have primary or secondary selected as "Other"</errorMessage>
+</ValidationRule>

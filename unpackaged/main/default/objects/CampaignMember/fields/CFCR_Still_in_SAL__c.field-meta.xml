@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_Still_in_SAL__c</fullName>
+    <description>Checked if Current Stage in Funnel is "SAL"</description>
+    <externalId>false</externalId>
+    <formula>CFCR_Current_Stage_in_Funnel__c = "SAL"</formula>
+    <inlineHelpText>Checked if Current Stage in Funnel is "SAL"</inlineHelpText>
+    <label>Still in SAL</label>
+    <type>Checkbox</type>
+</CustomField>

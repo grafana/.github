@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grafana_Cloud__c</fullName>
+    <description>Count of 'raised hands' for Grafana Cloud. Populated by a scheduled Account Flow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of 'raised hands' for Grafana Cloud.</inlineHelpText>
+    <label># Grafana Cloud</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

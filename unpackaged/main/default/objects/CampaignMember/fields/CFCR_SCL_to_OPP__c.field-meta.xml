@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFCR_SCL_to_OPP__c</fullName>
+    <description># Days from SCL to OPP - Evaluates to blank if OPP Date is blank.</description>
+    <externalId>false</externalId>
+    <formula>FCRM__FCR_SQR_Date__c -  CFCR_SCL_Date__c</formula>
+    <inlineHelpText># Days SCL to OPP</inlineHelpText>
+    <label>SCL to OPP</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

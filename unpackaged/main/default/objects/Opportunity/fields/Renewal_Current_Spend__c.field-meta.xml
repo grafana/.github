@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Current_Spend__c</fullName>
+    <description>DONOTUSE this field is invalid.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>DONOTUSE Renewal - Current Spend This field is populated with the amount of the closed won opportunity that triggered the renewal creation</inlineHelpText>
+    <label>DONOTUSE Renewal - Current Spend</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>
