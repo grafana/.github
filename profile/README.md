@@ -13,4 +13,4 @@ We have many projects, but we want to highlight a few, in a quite specific order
 
 ## Work with us
 
-If you choose to contribute to to any our projects, we would love to work with you and help hone your PRs to near perfection. If you like the experience and think you might want to do this full time, we are [always hiring](https://grafana.com/about/careers/).
+If you choose to contribute to any of our projects, we would love to work with you and help hone your PRs to near perfection. If you like the experience and think you might want to do this full-time, we are [always hiring](https://grafana.com/about/careers/).
