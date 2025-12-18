@@ -2,6 +2,7 @@
 
 If you think you have found a security vulnerability, please send us a report.
 We accept reports via [our Bug Bounty program][bugbounty] and over email.
+We prefer reports via [Bug Bounty program][bugbounty].
 Any of Grafana Labs' open source and commercial products (including but not limited to Grafana, Grafana Cloud, Grafana Enterprise, and grafana.com) are in scope.
 
 ## Bug bounty
@@ -10,8 +11,14 @@ To submit a bug bounty report, see [our Intigriti program page][bugbounty].
 
 Note that you must create an account on Intigriti to submit a report.
 The program page contains information on what is and is not in scope, as well as the reward structure.
+Only reports via Intigriti are eligible for a reward.
+
+**Important:** We ask you to not disclose the vulnerability before it have been fixed and announced, unless you received a response from the Grafana Labs security team that you can do so.
 
 ## Email
+
+Please note that reports sent over email are not eligible for a reward.
+If you want to be eligible for a reward, please submit your report via our preferred method, [the Bug Bounty program][bugbounty].
 
 To send us a report over email, contact us at [security@grafana.com](mailto:security@grafana.com).
 We will only accept vulnerability reports at this address; if you are looking for other security information, please contact our support team on [our website](https://grafana.com).
