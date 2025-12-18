@@ -1,8 +1,7 @@
 # Reporting security issues
 
 If you think you have found a security vulnerability, please send us a report.
-We accept reports via [our Bug Bounty program][bugbounty] and over email.
-We prefer reports via [Bug Bounty program][bugbounty].
+We prefer reports via [our Bug Bounty program][bugbounty], but also accept reports via email.
 Any of Grafana Labs' open source and commercial products (including but not limited to Grafana, Grafana Cloud, Grafana Enterprise, and grafana.com) are in scope.
 
 ## Bug bounty
