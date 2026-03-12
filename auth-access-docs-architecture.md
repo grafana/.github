@@ -381,21 +381,21 @@ Auth & Access Management
 
 ## 3. Comparative Matrix
 
-| Dimension | Datadog | New Relic | Dynatrace | Splunk |
-|---|---|---|---|---|
-| **Top-level section** | Account Management | Accounts & Billing | Manage | Administer / Security |
-| **URL convention** | Underscores (`account_management`) | Kebab-case (`new-relic-one-user-management`) | Kebab-case (`identity-access-management`) | Mixed (path-based segments) |
-| **Hierarchy depth** | 2-3 levels | 3-4 levels | 4-5 levels | 2-3 levels |
-| **Auth model** | RBAC | RBAC + User Types | ABAC (modern) + RBAC (legacy) | RBAC + Capabilities |
-| **IdP-specific guides** | Under SAML section | Under Automated User Mgmt | Under `/idp-specific/` subfolder | Under SSO section |
-| **Service accounts** | Under Org Settings | Not a distinct concept | Under Identity Mgmt ("service users") | Not a distinct concept (Obs Cloud) |
-| **Concepts vs procedural split** | Mixed in same pages | Separate pages | Strict separation (`-concepts` suffix) | Mostly mixed |
-| **Audit docs placement** | Under Account Mgmt | Separate event type (NrAuditEvent) | Under Data Privacy & Security | Under Security section |
-| **Tokens/API keys** | Peer section to RBAC | Under APIs section | Dedicated pillar under IAM | Dedicated section under Auth |
-| **Multi-org/multi-account** | Dedicated section | Under Account Structure | Under Account Mgmt | Centralized RBAC bridges products |
-| **Use-case tutorials** | Audit trail guides | Tutorial page | Dedicated `/use-cases/` section | Examples/tutorials section |
-| **Migration content** | N/A | Implied (old vs new user model) | Explicit migration guide | N/A |
-| **Dual/legacy paths** | No | Yes (old vs new user model) | Yes (RBAC vs ABAC paths) | Yes (Enterprise vs Obs Cloud) |
+| Dimension | Datadog | New Relic | Dynatrace | Splunk | **Grafana** |
+|---|---|---|---|---|---|
+| **Top-level section** | Account Management | Accounts & Billing | Manage | Administer / Security | **Configure Security + Administration** (split) |
+| **URL convention** | Underscores (`account_management`) | Kebab-case (`new-relic-one-user-management`) | Kebab-case (`identity-access-management`) | Mixed (path-based segments) | **Kebab-case (`configure-authentication`)** |
+| **Hierarchy depth** | 2-3 levels | 3-4 levels | 4-5 levels | 2-3 levels | **2-4 levels** |
+| **Auth model** | RBAC | RBAC + User Types | ABAC (modern) + RBAC (legacy) | RBAC + Capabilities | **Basic roles + RBAC (Enterprise)** |
+| **IdP-specific guides** | Under SAML section | Under Automated User Mgmt | Under `/idp-specific/` subfolder | Under SSO section | **Under SAML + under SCIM** |
+| **Service accounts** | Under Org Settings | Not a distinct concept | Under Identity Mgmt ("service users") | Not a distinct concept (Obs Cloud) | **Under Administration (dedicated section)** |
+| **Concepts vs procedural split** | Mixed in same pages | Separate pages | Strict separation (`-concepts` suffix) | Mostly mixed | **Mostly procedural; few concept pages** |
+| **Audit docs placement** | Under Account Mgmt | Separate event type (NrAuditEvent) | Under Data Privacy & Security | Under Security section | **Under Configure Security (single page)** |
+| **Tokens/API keys** | Peer section to RBAC | Under APIs section | Dedicated pillar under IAM | Dedicated section under Auth | **Service account tokens + Access Policies (Cloud)** |
+| **Multi-org/multi-account** | Dedicated section | Under Account Structure | Under Account Mgmt | Centralized RBAC bridges products | **Under Administration (org management)** |
+| **Use-case tutorials** | Audit trail guides | Tutorial page | Dedicated `/use-cases/` section | Examples/tutorials section | **RBAC rollout strategy guide only** |
+| **Migration content** | N/A | Implied (old vs new user model) | Explicit migration guide | N/A | **API keys → service accounts** |
+| **Dual/legacy paths** | No | Yes (old vs new user model) | Yes (RBAC vs ABAC paths) | Yes (Enterprise vs Obs Cloud) | **Yes (OSS/Enterprise vs Cloud)** |
 
 ---
 
@@ -513,3 +513,169 @@ This structure balances the strengths observed across all four platforms:
 Dynatrace's clean conceptual separation, Datadog's flat navigability, New
 Relic's thorough user-type modeling, and Splunk's practical
 auth-scheme-centric organization.
+
+---
+
+## 7. Grafana Current Docs vs. Recommended Canonical IA
+
+Grafana's auth and access management content is currently split across **two doc sets** (Grafana OSS/Enterprise and Grafana Cloud) and **two top-level sections within each** (Administration and Configure Security). This section maps the current Grafana structure to the recommended canonical IA, identifies gaps, and highlights structural differences.
+
+### 7.1 Current Grafana Documentation Structure
+
+#### Grafana OSS / Enterprise
+
+Auth/access content lives under two separate top-level areas:
+
+```
+setup-grafana/
+└── configure-security/                          # "Configure Security" section
+    ├── (overview)                               # Security overview (network, CORS, request restrictions)
+    ├── configure-authentication/                # Authentication methods landing page
+    │   ├── (overview / comparison table)        # Feature comparison across auth methods
+    │   ├── azuread/                             # Entra ID (Azure AD) OAuth
+    │   ├── okta/                                # Okta OAuth
+    │   ├── generic-oauth/                       # Generic OAuth
+    │   ├── github/                              # GitHub OAuth
+    │   ├── gitlab/                              # GitLab OAuth
+    │   ├── google/                              # Google OAuth
+    │   ├── grafana-cloud/                       # Grafana.com OAuth
+    │   ├── saml/                                # SAML (Enterprise)
+    │   │   ├── (overview)
+    │   │   ├── saml-configuration-options/      # SAML config reference
+    │   │   ├── configure-saml-with-okta/        # Okta SAML guide
+    │   │   ├── configure-saml-with-entra-id/    # Entra ID SAML guide
+    │   │   ├── saml-ui/                         # Configure SAML via UI
+    │   │   └── troubleshoot-saml/               # SAML troubleshooting
+    │   ├── ldap/                                # LDAP
+    │   ├── jwt/                                 # JWT Proxy
+    │   ├── auth-proxy/                          # Auth Proxy
+    │   ├── basic-auth/                          # Basic Auth
+    │   └── passwordless/                        # Passwordless Auth
+    ├── configure-scim-provisioning/             # SCIM provisioning
+    │   ├── (overview)
+    │   ├── configure-scim-with-okta/            # Okta SCIM guide
+    │   ├── configure-scim-with-entra-id/        # Entra ID SCIM guide
+    │   └── manage-users-teams/                  # Manage users and teams with SCIM
+    └── audit-grafana/                           # Audit Grafana instance (Enterprise)
+
+administration/
+├── user-management/                             # User management
+│   └── manage-org-users/                        # Manage users in an organization
+├── team-management/                             # Team management
+│   └── configure-grafana-teams/                 # Configure Grafana Teams
+├── organization-management/                     # Organization management
+├── service-accounts/                            # Service accounts
+│   └── migrate-api-keys/                        # Migrate API keys to service account tokens
+├── roles-and-permissions/                       # Roles and permissions
+│   ├── (overview)                               # Roles and permissions concepts
+│   └── access-control/                          # RBAC (Enterprise)
+│       ├── (overview)                           # RBAC overview
+│       ├── assign-rbac-roles/                   # Assign RBAC roles
+│       ├── manage-rbac-roles/                   # Manage RBAC roles
+│       ├── custom-role-actions-scopes/          # Permissions, actions, and scopes reference
+│       ├── plan-rbac-rollout-strategy/          # Plan RBAC rollout strategy
+│       ├── rbac-grafana-provisioning/           # Provision RBAC with Grafana (YAML)
+│       ├── rbac-terraform-provisioning/         # Provision RBAC with Terraform
+│       ├── folder-access-control/               # Folder access control
+│       └── troubleshooting/                     # Troubleshoot RBAC
+└── api-keys/                                    # API keys (deprecated → service accounts)
+```
+
+#### Grafana Cloud
+
+Auth/access content lives under **Security and account management**.
+
+```
+security-and-account-management/
+├── (overview)                                   # Security and account management landing
+├── cloud-portal/                                # Cloud Portal management
+│   └── (account overview, stacks, billing, security settings, user settings)
+├── authentication-and-permissions/              # Auth & permissions section
+│   ├── (overview)                               # Configure authentication and authorization
+│   ├── cloud-roles/                             # Grafana Cloud user roles and permissions
+│   ├── access-control/                          # RBAC
+│   │   ├── (overview)                           # RBAC overview
+│   │   ├── manage-rbac-roles/                   # Manage RBAC roles
+│   │   └── custom-role-actions-scopes/          # Permissions reference
+│   ├── access-policies/                         # Grafana Cloud Access Policies
+│   │   └── using-an-access-policy-token/        # Using access policy tokens
+│   └── service-accounts/                        # Service accounts
+└── (configure-authentication via shared Grafana docs: SAML, LDAP, OAuth, SCIM)
+```
+
+### 7.2 Mapping: Canonical IA Pillar → Current Grafana Location
+
+| Canonical Pillar | Grafana OSS/Enterprise Location | Grafana Cloud Location | Notes |
+|---|---|---|---|
+| **1. Overview** | No unified landing page | `security-and-account-management/` | OSS splits across two unrelated top-level sections |
+| **2. Authentication** | `setup-grafana/configure-security/configure-authentication/` | Shared with OSS docs; Cloud Portal > Security > Advanced Auth | Well-covered; flat list of 12+ auth methods with feature comparison table |
+| **2a. MFA** | Not a standalone section | Not a standalone section | MFA not prominent in Grafana docs; no dedicated page found |
+| **2b. SSO / SAML** | `configure-authentication/saml/` (Enterprise) | Shared | Good sub-structure with IdP guides (Okta, Entra ID), config reference, troubleshooting |
+| **2c. OAuth** | `configure-authentication/{provider}/` | Shared | Each OAuth provider is a peer page (7 providers) |
+| **2d. LDAP** | `configure-authentication/ldap/` | Shared | Enhanced LDAP with active sync in Enterprise |
+| **3. Identity Mgmt — Users** | `administration/user-management/` | Cloud Portal > User Settings | Minimal: "manage org users" is essentially one page |
+| **3. Identity Mgmt — Groups** | No groups concept | No groups concept | Grafana uses Teams instead of groups |
+| **3. Identity Mgmt — Service Accounts** | `administration/service-accounts/` | `authentication-and-permissions/service-accounts/` | Well-covered; includes migration from deprecated API keys |
+| **3. Identity Mgmt — Teams** | `administration/team-management/` | Minimal | Team management docs exist but are thin |
+| **3. Identity Mgmt — Organizations** | `administration/organization-management/` | Cloud Portal (stacks, not orgs in same sense) | Different models: OSS has multi-org, Cloud has stacks |
+| **4. User Provisioning (SCIM)** | `configure-security/configure-scim-provisioning/` | Shared | Good structure: overview + IdP guides (Okta, Entra ID) + manage users/teams |
+| **5. Roles & Permissions** | `administration/roles-and-permissions/` + `access-control/` | `authentication-and-permissions/access-control/` + `cloud-roles/` | Well-covered; basic roles (Viewer/Editor/Admin) + RBAC (Enterprise) with planning, provisioning, and troubleshooting guides |
+| **5a. Granular Access** | `access-control/folder-access-control/` | N/A | Folder-based access control as primary granular mechanism |
+| **6. API Keys & Tokens** | `administration/api-keys/` (deprecated) + `administration/service-accounts/` (tokens) | `authentication-and-permissions/access-policies/` | Cloud has Access Policies (scopes + realms); OSS migrating API keys → service account tokens |
+| **6a. OAuth Clients** | Not a standalone section | Cloud Portal > Security > OAuth 2.0 clients | Cloud-specific feature |
+| **7. Audit** | `configure-security/audit-grafana/` (Enterprise) | Not a standalone section in Cloud docs | Enterprise-only feature; single page |
+| **7a. Security Best Practices** | `configure-security/` (network/CORS guidance scattered) | Cloud Portal security settings | No consolidated best practices page |
+| **Guides & Tutorials** | `access-control/plan-rbac-rollout-strategy/` | N/A | Only RBAC has a planning/strategy guide |
+| **Migration** | `service-accounts/migrate-api-keys/` | N/A | Only API keys → service accounts migration documented |
+
+### 7.3 Key Structural Differences from Canonical IA
+
+#### Split across two top-level sections (OSS/Enterprise)
+
+Grafana's most significant structural divergence is that **authentication** lives under `setup-grafana/configure-security/` while **identity and authorization** live under `administration/`. A user looking for "how do I set up SSO and then assign roles" must navigate between two unrelated doc trees. Every other platform analyzed keeps these under a single parent.
+
+#### No unified auth/access landing page (OSS/Enterprise)
+
+There is no single page that introduces the entire auth and access management domain for Grafana OSS/Enterprise. Grafana Cloud has `security-and-account-management/` as a landing page, but OSS/Enterprise users land in either `configure-security/` (a setup guide framing) or `administration/` (a runtime management framing) with no bridge between them.
+
+#### Authentication is configuration-centric, not concept-centric
+
+Grafana's authentication docs are organized as a flat list of "configure X" pages. There is no concepts page explaining authentication in Grafana holistically (what are authentication domains, how do auth methods interact, what happens at login time). The feature comparison table on the `configure-authentication/` landing page is useful but is a reference, not a conceptual introduction.
+
+#### No MFA documentation
+
+Unlike Datadog, New Relic, and Dynatrace, which all have dedicated MFA pages, Grafana does not appear to have a standalone MFA/2FA documentation page. This is a coverage gap if the feature exists.
+
+#### Teams replace Groups
+
+Grafana uses Teams where other platforms use Groups. This is a naming difference, not a structural gap, but the team management docs are thin compared to the role they play in RBAC (teams can be assigned RBAC roles, receive team sync from IdPs, etc.).
+
+#### Access Policies are Cloud-specific
+
+Grafana Cloud introduces Access Policies (scopes + realms) as a distinct concept that doesn't exist in OSS/Enterprise. This creates a divergence in the API keys & tokens pillar between the two doc sets.
+
+#### Audit is minimal
+
+Grafana's audit documentation is a single page under `configure-security/`, available only in Enterprise. Other platforms (especially Datadog and Dynatrace) have multi-page audit sections with use-case guides and querying tutorials.
+
+#### SCIM placement
+
+SCIM is under `configure-security/` alongside authentication, which matches the canonical IA's "User Provisioning" pillar as a peer to authentication. This is well-positioned.
+
+### 7.4 Recommendations for Grafana
+
+Based on the gap analysis, these are the highest-impact structural improvements:
+
+1. **Create a unified auth & access landing page** for Grafana OSS/Enterprise that links to both `configure-security/configure-authentication/` and `administration/roles-and-permissions/`, giving users a single entry point to the domain.
+
+2. **Add a concepts/overview page** to `configure-authentication/` explaining Grafana's authentication model holistically: how auth methods are evaluated, what happens at login, how auth interacts with org roles, and how team sync ties IdP groups to Grafana teams.
+
+3. **Add MFA documentation** if the feature exists, or document how MFA is handled (delegated to IdP via SAML/OAuth).
+
+4. **Expand team management docs** to cover team sync behavior, how teams interact with RBAC roles, and team-based access patterns — since teams are Grafana's equivalent of groups.
+
+5. **Expand audit documentation** with querying/filtering guidance, common audit use cases, and integration with Loki (which is already supported but not well-documented from a user perspective).
+
+6. **Add a security best practices page** consolidating guidance currently scattered across `configure-security/` sub-pages (network restrictions, CORS, request security, auth method selection).
+
+7. **Consider bridging Cloud and OSS/Enterprise token docs** since the two models (service account tokens vs. access policy tokens) serve similar purposes but are documented in completely separate trees with no cross-references.
