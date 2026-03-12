@@ -283,7 +283,7 @@ admin/
 
 ## 2. Cross-Platform Information Architecture: Synthesized Model
 
-Based on the patterns across all four platforms, the canonical information architecture for auth & access management documentation can be distilled into the following **seven pillars**:
+Based on the patterns across all four platforms, the canonical information architecture for auth & access management documentation can be distilled into the following **seven pillars**, ordered to match the runtime flow a user experiences (authenticate first, then be identified, then be authorized):
 
 ```
 Auth & Access Management
@@ -293,23 +293,7 @@ Auth & Access Management
 │   ├── Key concepts (identity, authentication, authorization)
 │   └── Architecture / how it all fits together
 │
-├── 2. IDENTITY MANAGEMENT (Who)
-│   ├── Users
-│   │   ├── User concepts (user types, lifecycle)
-│   │   ├── Add / invite / manage users (procedural)
-│   │   └── User provisioning methods
-│   ├── Groups
-│   │   ├── Group concepts
-│   │   └── Create / manage groups (procedural)
-│   ├── Service Accounts / Service Users
-│   │   └── Create / manage service accounts (procedural)
-│   ├── Teams / Organizational Units
-│   │   └── Create / manage teams (procedural)
-│   └── Organizations & Multi-Org
-│       ├── Organization structure concepts
-│       └── Multi-organization management (procedural)
-│
-├── 3. AUTHENTICATION (How users prove identity)
+├── 2. AUTHENTICATION (How users prove identity — the front door)
 │   ├── Authentication overview / login methods
 │   ├── Username & Password
 │   ├── Multi-Factor Authentication (MFA/2FA)
@@ -329,7 +313,23 @@ Auth & Access Management
 │   └── Authentication Domains / Settings
 │       └── Session management, user type upgrades, provisioning method
 │
-├── 4. AUTOMATED PROVISIONING (How users are synced)
+├── 3. IDENTITY MANAGEMENT (Who exists in the system)
+│   ├── Users
+│   │   ├── User concepts (user types, lifecycle)
+│   │   ├── Add / invite / manage users (procedural)
+│   │   └── User provisioning methods
+│   ├── Groups
+│   │   ├── Group concepts
+│   │   └── Create / manage groups (procedural)
+│   ├── Service Accounts / Service Users
+│   │   └── Create / manage service accounts (procedural)
+│   ├── Teams / Organizational Units
+│   │   └── Create / manage teams (procedural)
+│   └── Organizations & Multi-Org
+│       ├── Organization structure concepts
+│       └── Multi-organization management (procedural)
+│
+├── 4. AUTOMATED PROVISIONING (How identities are synced at scale)
 │   ├── SCIM overview / concepts
 │   ├── SCIM configuration (procedural)
 │   ├── IdP-specific SCIM guides
@@ -454,14 +454,7 @@ Auth & Access Management (top-level section)
 ├── Overview
 │   └── Key concepts and architecture
 │
-├── Identity Management
-│   ├── Users
-│   ├── Groups
-│   ├── Service Accounts
-│   ├── Teams
-│   └── Organizations / Multi-Org
-│
-├── Authentication
+├── Authentication                            ← first: how users prove identity
 │   ├── Login Methods Overview
 │   ├── Multi-Factor Authentication
 │   ├── SSO / SAML
@@ -470,13 +463,20 @@ Auth & Access Management (top-level section)
 │   ├── OIDC (if supported)
 │   └── LDAP (if supported)
 │
-├── User Provisioning
+├── Identity Management                       ← second: who exists in the system
+│   ├── Users
+│   ├── Groups
+│   ├── Service Accounts
+│   ├── Teams
+│   └── Organizations / Multi-Org
+│
+├── User Provisioning                         ← third: how identities are synced at scale
 │   ├── SCIM Overview
 │   ├── Configuration
 │   ├── IdP-Specific Guides
 │   └── SCIM API Reference
 │
-├── Roles & Permissions
+├── Roles & Permissions                       ← fourth: what authenticated identities can do
 │   ├── Access Control Overview
 │   ├── Built-in Roles
 │   ├── Custom Roles
@@ -484,14 +484,14 @@ Auth & Access Management (top-level section)
 │   ├── Policies (ABAC, if supported)
 │   └── Granular Access Control
 │
-├── API Keys & Tokens
+├── API Keys & Tokens                         ← fifth: programmatic/machine authentication
 │   ├── Overview
 │   ├── Organization / Ingest Keys
 │   ├── User / Application Keys
 │   ├── OAuth Clients
 │   └── Token Management (rotation, scoping, expiration)
 │
-├── Audit & Compliance
+├── Audit & Compliance                        ← sixth: tracking what happened
 │   ├── Audit Trail
 │   ├── Querying Audit Logs
 │   └── Security Best Practices
@@ -502,4 +502,14 @@ Auth & Access Management (top-level section)
     └── Migration Guides
 ```
 
-This structure balances the strengths observed across all four platforms: Dynatrace's clean conceptual separation, Datadog's flat navigability, New Relic's thorough user-type modeling, and Splunk's practical auth-scheme-centric organization.
+The ordering follows the runtime flow a user actually experiences: authenticate
+(prove who you are), then be identified (exist in the system), then be
+authorized (get permissions). This matches user mental models better than an
+admin-setup ordering where identity management comes first. It also aligns with
+how Splunk organizes its docs, leading with "About user authentication" before
+role and user management content.
+
+This structure balances the strengths observed across all four platforms:
+Dynatrace's clean conceptual separation, Datadog's flat navigability, New
+Relic's thorough user-type modeling, and Splunk's practical
+auth-scheme-centric organization.
