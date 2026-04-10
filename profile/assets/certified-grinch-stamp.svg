@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+<title>Certified Grinch approval stamp</title>
+<desc>A circular approval-stamp logo with a stylized Grinch face and the words Certified Grinch.</desc>
+<defs>
+  <linearGradient id="seal-wash" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#dff0b6"/>
+    <stop offset="100%" stop-color="#95c548"/>
+  </linearGradient>
+  <linearGradient id="card-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#a8d25c"/>
+    <stop offset="100%" stop-color="#94c449"/>
+  </linearGradient>
+  <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#1b1b1b" flood-opacity="0.18"/>
+  </filter>
+  <pattern id="speckle" width="84" height="84" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="16" r="2.5" fill="#274410" opacity="0.14"/>
+    <circle cx="34" cy="10" r="1.8" fill="#274410" opacity="0.18"/>
+    <circle cx="58" cy="22" r="2.1" fill="#274410" opacity="0.15"/>
+    <circle cx="76" cy="8" r="1.6" fill="#274410" opacity="0.18"/>
+    <circle cx="22" cy="48" r="2.3" fill="#274410" opacity="0.14"/>
+    <circle cx="44" cy="62" r="1.9" fill="#274410" opacity="0.18"/>
+    <circle cx="64" cy="50" r="2.4" fill="#274410" opacity="0.14"/>
+    <circle cx="14" cy="72" r="1.6" fill="#274410" opacity="0.18"/>
+    <path d="M26 28h10M50 38h8M8 58h12M60 74h9" fill="none" stroke="#274410" stroke-linecap="round" stroke-width="2.5" opacity="0.12"/>
+  </pattern>
+</defs>
+<g transform="rotate(-8 360 360)">
+  <circle cx="360" cy="360" r="286" fill="url(#seal-wash)" opacity="0.18"/>
+  <circle cx="360" cy="360" r="278" fill="none" stroke="#274410" stroke-width="20"/>
+  <circle cx="360" cy="360" r="252" fill="none" stroke="#274410" stroke-width="8" stroke-dasharray="20 16" opacity="0.9"/>
+  <circle cx="360" cy="360" r="272" fill="url(#speckle)" opacity="0.32"/>
+  <g fill="#274410">
+    <path d="M188 175l7 22h24l-19 13 8 22-20-14-20 14 7-22-18-13h23z"/>
+    <path d="M532 175l7 22h24l-19 13 8 22-20-14-20 14 7-22-18-13h23z"/>
+  </g>
+  <text x="360" y="154" fill="#1f330d" font-family="Verdana, Geneva, sans-serif" font-size="52" font-weight="900" letter-spacing="6" text-anchor="middle">CERTIFIED</text>
+  <path d="M154 180C222 144 301 126 360 126C419 126 498 144 566 180" fill="none" stroke="#1f330d" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <g filter="url(#card-shadow)">
+    <rect x="205" y="197" width="310" height="310" rx="54" fill="url(#card-fill)" stroke="#3b5f16" stroke-width="8"/>
+    <rect x="219" y="211" width="282" height="282" rx="42" fill="url(#speckle)" opacity="0.18"/>
+  </g>
+  <g fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 241C285 214 319 208 344 240" stroke-width="10"/>
+    <path d="M450 241C435 214 401 208 376 240" stroke-width="10"/>
+    <path d="M294 224l-16-22 18 10 8-23 3 22 17-18" stroke-width="6"/>
+    <path d="M426 224l16-22-18 10-8-23-3 22-17-18" stroke-width="6"/>
+    <path d="M355 214l-10-26 18 18" stroke-width="6"/>
+    <path d="M365 214l10-26-18 18" stroke-width="6"/>
+    <ellipse cx="319" cy="289" rx="49" ry="41" fill="#fbfbfb" stroke-width="3"/>
+    <ellipse cx="401" cy="289" rx="49" ry="41" fill="#fbfbfb" stroke-width="3"/>
+    <circle cx="339" cy="307" r="9" fill="#161616" stroke-width="0"/>
+    <circle cx="381" cy="307" r="9" fill="#161616" stroke-width="0"/>
+    <ellipse cx="360" cy="337" rx="16" ry="13" fill="#161616" stroke-width="0"/>
+    <path d="M356 352C357 377 349 398 353 423" stroke-width="5"/>
+    <path d="M364 352C362 370 367 389 364 411" stroke-width="3"/>
+    <path d="M214 412C196 405 174 407 154 426" stroke-width="4"/>
+    <path d="M506 412C524 405 546 407 566 426" stroke-width="4"/>
+    <path d="M209 468C179 419 194 364 246 338" stroke-width="5"/>
+    <path d="M511 468C541 419 526 364 474 338" stroke-width="5"/>
+    <path d="M233 472C270 535 322 531 360 517C404 501 452 509 487 470" stroke-width="6"/>
+    <path d="M298 544C322 528 353 526 383 543" stroke-width="4"/>
+    <path d="M345 556C356 548 367 548 376 557" stroke-width="3"/>
+  </g>
+  <g>
+    <path d="M183 538H537L514 598H206Z" fill="#274410"/>
+    <path d="M183 538l-36-20v44l36-24z" fill="#274410"/>
+    <path d="M537 538l36-20v44l-36-24z" fill="#274410"/>
+    <path d="M198 552H522" fill="none" stroke="#dff0b6" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+    <text x="360" y="584" fill="#f6ffe5" font-family="Verdana, Geneva, sans-serif" font-size="56" font-weight="900" letter-spacing="7" text-anchor="middle">GRINCH</text>
+  </g>
+  <g fill="#274410" opacity="0.86">
+    <path d="M232 643l5 14h15l-12 8 4 14-12-8-12 8 5-14-12-8h15z"/>
+    <path d="M488 643l5 14h15l-12 8 4 14-12-8-12 8 5-14-12-8h15z"/>
+  </g>
+  <path d="M264 660C289 648 324 640 360 640C396 640 431 648 456 660" fill="none" stroke="#1f330d" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+</g>
+</svg>
