@@ -41,16 +41,16 @@
     <rect x="219" y="211" width="282" height="282" rx="42" fill="url(#speckle)" opacity="0.18"/>
   </g>
   <g fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M270 241C285 214 319 208 344 240" stroke-width="10"/>
-    <path d="M450 241C435 214 401 208 376 240" stroke-width="10"/>
-    <path d="M294 224l-16-22 18 10 8-23 3 22 17-18" stroke-width="6"/>
-    <path d="M426 224l16-22-18 10-8-23-3 22-17-18" stroke-width="6"/>
-    <path d="M355 214l-10-26 18 18" stroke-width="6"/>
-    <path d="M365 214l10-26-18 18" stroke-width="6"/>
-    <ellipse cx="319" cy="289" rx="49" ry="41" fill="#fbfbfb" stroke-width="3"/>
-    <ellipse cx="401" cy="289" rx="49" ry="41" fill="#fbfbfb" stroke-width="3"/>
-    <circle cx="339" cy="307" r="9" fill="#161616" stroke-width="0"/>
-    <circle cx="381" cy="307" r="9" fill="#161616" stroke-width="0"/>
+    <path d="M267 247C288 204 328 201 350 239" stroke-width="11"/>
+    <path d="M453 247C432 204 392 201 370 239" stroke-width="11"/>
+    <path d="M291 228l-26-20 20 6 6-27 8 21 22-18-12 23 24-6" stroke-width="7"/>
+    <path d="M429 228l26-20-20 6-6-27-8 21-22-18 12 23-24-6" stroke-width="7"/>
+    <path d="M354 214l-15-31 21 18" stroke-width="7"/>
+    <path d="M366 214l15-31-21 18" stroke-width="7"/>
+    <ellipse cx="319" cy="291" rx="51" ry="38" transform="rotate(-9 319 291)" fill="#fbfbfb" stroke-width="3"/>
+    <ellipse cx="401" cy="291" rx="51" ry="38" transform="rotate(9 401 291)" fill="#fbfbfb" stroke-width="3"/>
+    <circle cx="341" cy="301" r="9" fill="#161616" stroke-width="0"/>
+    <circle cx="379" cy="301" r="9" fill="#161616" stroke-width="0"/>
     <ellipse cx="360" cy="337" rx="16" ry="13" fill="#161616" stroke-width="0"/>
     <path d="M356 352C357 377 349 398 353 423" stroke-width="5"/>
     <path d="M364 352C362 370 367 389 364 411" stroke-width="3"/>
@@ -58,9 +58,9 @@
     <path d="M506 412C524 405 546 407 566 426" stroke-width="4"/>
     <path d="M209 468C179 419 194 364 246 338" stroke-width="5"/>
     <path d="M511 468C541 419 526 364 474 338" stroke-width="5"/>
-    <path d="M233 472C270 535 322 531 360 517C404 501 452 509 487 470" stroke-width="6"/>
-    <path d="M298 544C322 528 353 526 383 543" stroke-width="4"/>
-    <path d="M345 556C356 548 367 548 376 557" stroke-width="3"/>
+    <path d="M233 472C274 530 320 522 355 509C405 489 454 500 487 470" stroke-width="6"/>
+    <path d="M296 544C321 525 356 521 389 539" stroke-width="4"/>
+    <path d="M341 555C354 545 369 544 382 553" stroke-width="3"/>
   </g>
   <g>
     <path d="M183 538H537L514 598H206Z" fill="#274410"/>
