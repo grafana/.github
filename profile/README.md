@@ -11,6 +11,10 @@ We have many projects, but we want to highlight a few, in a quite specific order
 * [Tempo](https://github.com/grafana/tempo), a high volume, minimal dependency distributed tracing backend.
 * [Mimir](https://github.com/grafana/mimir), the most scalable [Prometheus](https://prometheus.io/) backend.
 
+## Plugin development
+
+If you want to build plugins for Grafana, start with the [Grafana plugin tutorial](../PLUGIN_TUTORIAL.md) in this repository. It covers plugin types, scaffolding with the official plugin tools, local development with Docker, the key generated files, and signing for distribution.
+
 ## Work with us
 
 If you choose to contribute to any of our projects, we would love to work with you and help hone your PRs to near perfection. If you like the experience and think you might want to do this full-time, we are [always hiring](https://grafana.com/about/careers/).
